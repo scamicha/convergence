@@ -1,0 +1,11 @@
+*.docx
+.#*
+*.gz
+*.aux
+*.dvi
+*.log
+*.pdf
+*.bbl
+*.blg
+auto
+*.rel

@@ -29,6 +29,7 @@
 
 \usepackage{color}
 \usepackage{graphicx}
+\usepackage{epstopdf}
 \usepackage{amsmath, amsthm, amssymb}
 
 
@@ -355,7 +356,7 @@ a_m = \int \rho \cos(m\phi)\varpi {\rm d}\varpi {\rm d}z {\rm d}\phi,
 \addtocounter{equation}{-1}
 \addtocounter{subequation}{1}
 \begin{equation}
-b_m = \int \rho \sin(m\phi)\varpi {\rm d}\varpi {\rm d}z {\rm d}\phi.
+b_m =\int \rho \sin(m\phi)\varpi {\rm d}\varpi {\rm d}z {\rm d}\phi.
 \end{equation}
 \renewcommand{\theequation}{\arabic{equation}}
 Here  $\rho_o$ is the axisymmetric (zero-order)  component of the density.
@@ -463,11 +464,11 @@ only in the $z$-component of torque,
 as only this component  
 drives mass and angular momentum transfer.  
 The torque contribution from each mode $m$ can be calculated 
-by replacing $\rho$ in Equation (5) with the corresponding modal density component
+by replacing $\rho$ in Equation (5) with the density distribution reconstructed from a single Fourier component
 \begin{equation}
-\rho_m = \slantfrac{1}{2} \rho_o + a_m \cos(m\phi) + b_m \sin(m\phi),
+\rho_m = a_{\phi m} \cos(m\phi) + b_{\phi m} \sin(m\phi),
 \end{equation}
-where $a_m$ and $b_m$ are provided by Equation 2,
+where $a_{\phi m} =\slantfrac{1}{\pi} \int \rho \cos(m\phi){\rm d}\phi$ and $b_{\phi m} =\slantfrac{1}{\pi} \int \rho \sin(m\phi){\rm d}\phi$,
 and only the gravitational potential produced by the mass distribution
 given by $\rho_m$ is included in $\Phi$.
 {\bf (Scott: Equation (6) is the form you use in your chapter 3, but it
@@ -539,8 +540,7 @@ The gravitational torque from equation \ref{torque1} can be used to determine th
 gravitational stress by
 \begin{equation}
 \begin{split}
- T_{\varpi\phi}^{grav}  {\varpi}& = \frac{1}{2\pi\varpi^2}C_Z
-\\
+ T_{\varpi\phi}^{grav}\left( \varpi \right) & = \frac{1}{2\pi\varpi^2}C_Z\\
                                 & = - \frac{1}{2\pi\varpi^2} \int \rho\frac{\partial\Phi}{\partial\phi} {\rm d}V.
 \end{split}
 \end{equation}

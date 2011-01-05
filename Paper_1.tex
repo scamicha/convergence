@@ -121,7 +121,8 @@ modes can become unstable in the linear regime \citep{nelson1998, pickett1998, l
 then power will exist at all $m$-values resolved by a given numerical method \citep{mejia2005,boley2006}.  
 In the asymptotic state, GI-active disks develop overlapping density structures of different strengths, geometries and coherence, producing strongly nonlinear turbulence that pervades the entire disk \citep[e.g.][]{pickett2003, mejia2005,boley2006}.
 \citet{gammie2001} refers to this state as {\it gravitoturbulence}. Gravitoturbulence provides a possible bridge between the detailed physics of GIs and the viscous transport parameter $\alpha$.  Here convergence studies are important because 
-higher order modes dissipate energy on shorter wavelengths than lower order modes.  The mix of low and high order modes available to a disk is set by the resolution of the simulation. {\bf Multiple issues with this paragraph. Didn't want to rewrite unilaterally. 1) In the first couple sentences the description of mode growth needs some tweaking, many modes appear in the linear regime, and although we have seen amplitude at all m values I don't know that it's a given. 2) I wouldn't describe the structures formed by GI activity as ``strongly nonlinear turbulence''. 3) In reviewing Gammie 2001 it seems that he is actually referring to a turbulent cascade (a fact I hadn't fully appreciated until now) I think it's pretty clear that the effective alpha we see is, in fact, not due to a turbulent cascade. i.e. alpha is driven by low order coherent modes. We should discuss this at some point SM}
+higher order modes dissipate energy on shorter wavelengths than lower order modes.  The mix of low and high order modes available to a disk is set by the resolution of the simulation. {\bf (SM Comments: Multiple issues with this paragraph. Didn't want to rewrite unilaterally. 1) In the first couple sentences the description of mode growth needs some tweaking, many modes appear in the linear regime, and although we have seen amplitude at all m values I don't know that it's a given. 2) I wouldn't describe the structures formed by GI activity as ``strongly nonlinear turbulence''. 3) In reviewing Gammie 2001 it seems that he is actually referring to a turbulent cascade (a fact I hadn't fully appreciated until now) I think it's pretty clear that the effective alpha we see is, in fact, not due to a turbulent cascade. i.e. alpha is driven by low order coherent modes. We should discuss this at some point), (TSC thoughts: I feel comfortable with the text as written.  As per Scott's points 1 and 2, I think the works referenced are consistent with the text.  As for point 3, we do see a transfer of power from lower orders to higher orders as
+time progresses, just as in Gammie.  This is a valid usage of the term cascade.  Gammie use of the word ``cascade'' is predicated on the same type of analysis conducted here.  I will leave the paragraph as is and let Aaron and Dick comment.)}
 
 \citet{shakura1973} proposed turbulence as the primary source of effective viscosity in gas disks
 and parameterized turbulent transport in a steady-state disk with the  parameter $\alpha$.  The source of the 
@@ -160,9 +161,9 @@ disk and
 $\gamma = 3 - 2/\Gamma $
 for a strongly self gravitating disk.   \cite{lodato2004} derived a similar result when considering three dimensional protoplanetary disks.
 Motivated by
-the results from \cite{laughlin1996}, \cite{gammie2001}, and \cite{lodato2004, lodato2005}, which demonstrated differences in the manifestation of high and low-order, \citet{kratter2008} 
+the results of \cite{laughlin1996}, \cite{gammie2001}, and \cite{lodato2004, lodato2005}, which demonstrated differences in the manifestation of high and low-order azimuthal modes, \citet{kratter2008} 
 proposed $\alpha_{\rm{eff}} = (\alpha_{short}^2 + \alpha_{long}^2)^{1/2}$. Here $\alpha_{short}$ and $\alpha_{long}$
-are functions of $Q$ and $M_d/\left( M_d+M_*\right)$ representing 
+are functions of $Q$ and the fractional mass of the disk, $M_d/\left( M_d+M_*\right)$, representing 
 the different wavelength regimes expected to dominate for different values of the mass ratio and cooling rate. 
 Fully 3D simulations \citep[e.g.][]{lodato2004, cossins2009} suggest that, at least in the case of imposed cooling, $\alpha_{\rm{\rm{eff}}}$ roughly converges to the value predicted by \citeauthor{gammie2001}. 
 
@@ -176,10 +177,10 @@ increases as the grid size is increased.  At the same time, the Courant conditio
 forces shorter time steps.  A mesh convergence study 
 provides a common approach to balancing accuracy and computing resources.
 In the following sections we follow the evolution of a disk subject to GIs
-using four different
-resolutions in the azimuthal direction.  The number of azimuthal grid points used in simulations
+using grids with four different
+resolutions in the azimuthal direction.  The number of azimuthal elements used in simulations
 may be particularly important, because higher azimuthal resolution 
-allows non-axisymmetric amplitude to spread to higher-order modes 
+allows power in non-axisymmetric density structures to spread to higher-order modes 
 that behave more locally. We test this by examining the amplitude in various 
 modes to see how they are affected by the choice of grid.
 In the process, 
@@ -218,8 +219,7 @@ Simulations were run with four different angular resolutions, with grid sizes in
 phase. Although this strategy saves a large amount of computational time, it limits the scope of the analysis to the asymptotic phase. By 12 ORPs, all four disks have transitioned to the asymptotic state.  All simulations were 
 run through $\sim 18$ ORPs.
 
-Figure \ref{fig:Final_Q} shows the Toomre $Q$, as a function of radius, for all four simulations at $t \sim$ 18 ORP.  Table \ref{tbl:ams} lists $Q_{avg}$, the value of $Q$ of each of the asymptotic disks, time-averaged from 12 -- 19 ORP and spatially averaged over 10 -- 40 AU.  From $\sim$ 12 -- 50 AU, $Q \sim 1.0$ -- 1.4 and thus the disk is subject GIs over this full range.  Interior to $\sim$ 27 AU, the value of $Q$ shows no dependence on
-the azimuthal resolution.  From 27 -- 50 AU, lower resolution simulations display lower values of $Q$. {\bf I suppose 27 AU was chosen by eye? Or was there some other analysis. I vote to toss these last two sentences as I'm not convinced w/o a time averaged quantity. Unless this observation is used in further reasoning in the discussion...SM} 
+Figure \ref{fig:Final_Q} shows the Toomre $Q$, as a function of radius, for all four simulations at $t \sim$ 18 ORP.  Table \ref{tbl:ams} lists $Q_{avg}$, the value of $Q$ of each of the asymptotic disks, time-averaged from 12 -- 19 ORP and spatially averaged over 10 -- 40 AU.  From $\sim$ 12 -- 50 AU, $Q \sim 1.0$ -- 1.4 and thus the disk is subject to GIs over this full range.  
 
 
 %%%%%%%%%%%% RESULTS & DISCUSSION %%%%%%%%%%%%%%%%
@@ -253,7 +253,7 @@ In particular, $\langle A_{tot} \rangle$ will represent the power over the radia
 Because the central star is artificially fixed to the grid center, the dynamics of the $m=1$ mode may not
 be accurately treated. For this reason, it is excluded from $\langle A_{tot} \rangle$.
 
-{\bf (Note to all: Throughout the paper I use integrals in places where we 
+{\bf (Note from TSC: Throughout the paper I use integrals in places where we 
 formally have used summations.  I note that this is a common practice, though
 not strictly correct.  I find the use of integrals more elegant, but am willing to
 revert to summations if people push for it.)}
@@ -267,7 +267,7 @@ While the total power is approximately independent of resolution, $\langle A_{to
 the distribution of this power shows marked differences. In particular, the fractional power in lower order modes decreases monotonically with increasing resolution.  Over three quarters of $\langle A_{tot} \rangle$ resides
 in modes $m =$ 2 -- 7 for the $l_{max} = 64$ simulation, while approximately half resides in these modes when $l_{max} =$ 512.
 
-The shift of power from lower to higher order modes as the resolution of the computational grid is increased arises from the fact that, while $\langle A_{tot} \rangle$ is approximately independent of $l_{max}$,  the number of degrees of freedom available for this power, $l_{max}/2$, increases linearly with the resolution. Thus amplitude is naturally spread from lower order to higher order modes as the available $m$-values increase. Indeed, even if the disk is dominated by one or two low-order modes at the time of outburst, this power cascades to higher-order modes \citep[for example][]{laughlin1997, laughlin1998,laughlin1996}. {\bf Haven't had a chance to check these refs but I'm reluctant to call what we see a cascade of power. I suggest striking this sentence. SM}
+The shift of power from lower to higher order modes as the resolution of the computational grid is increased arises from the fact that, while $\langle A_{tot} \rangle$ is approximately independent of $l_{max}$,  the number of degrees of freedom available for this power, $l_{max}/2$, increases linearly with the resolution. Thus amplitude is naturally spread from lower order to higher order modes as the available $m$-values increase. Indeed, even if the disk is dominated by one or two low-order modes at the time of outburst, this power cascades to higher-order modes \citep[for example][]{laughlin1997, laughlin1998,laughlin1996}. {\bf (SM note: Haven't had a chance to check these refs but I'm reluctant to call what we see a cascade of power. I suggest striking this sentence.), (TSC response: I have indicated my thoughts on this in the introductory section.  Dick \& Aaron, chip in here.)}
 
 
 Given how the non-axisymmetric amplitude distribution depends on the azimuthal resolution, we must examine what resolution is sufficient to properly capture the evolution of these disks. Table \ref{tbl:ams} shows that while the fractional power in lower order modes decreases with each doubling of $l_{max}$, the amount of change in going from $l_{max} = 256$ to 512 
@@ -324,17 +324,19 @@ We note two results of figure \ref{fig:torquearray}: 1) the total gravitational 
 time-averaged over for four different time-frames.  I created multiple frames because I wanted to see if torques were 
 diminishing with time, as might be expected if the disk has not achieved its asymptotic state.  
 Dick has told me he only believes the 12-18 ORP result - Dick, I hope 
-I'm not misquoting you. Should we go with multiple panels representing different time-frames or 
-go solely with the 12 - 18 orp panel?
+I'm not misquoting you.  I like the multiple panels because it seems to show that the disk has not yet achieved 
+its asymptotic state.  Comparing the 12-14, 14-16, and 16-18 orp panels for
+the 512 simulation shows that the total torque decreases with time.  The 12-18 orp frame is heavily weighted
+by the 12-14 orp window.  Also, the fractional power in the $m =$ 2 and 3 modes diminishes with time, while the 12-18 orp
+frame is heavily influenced by the 12-14 orp window.  Should we go with multiple panels representing different time-frames or 
+go solely with the 12 - 18 orp panel?  Scott votes for the 12-18 panel by itself, I argue for the four frames.)
 } 
-
-{\bf I still think the scale in figure 5 is off by a factor of 2 probably due to the fact that you've used a 0.5 $M_\odot$ star. I also vote for a single 12-18 ORP panel. SM}
 
 \subsection{Effective Alphas}
 
 %An $\alpha$-framework treats disks as essentially two-dimensional objects subject to local energy dissipation.  Therefore, in order to compare our results with predicted and published results, we must extract two-dimensional information from our three-dimensional disks.
 
-{\bf I've made some significant changes to this text from Tom's original. Specifically in the first, fourth, and fifth paragraphs. Please look over and make sure this fits in properly. SM}
+\noindent {\bf (I've made some significant changes to this text from Tom's original. Specifically in the first, fourth, and fifth paragraphs. Please look over and make sure this fits in properly. SM), (TSC - I am passing Scott's changes along intact.)}
 
 After obtaining the gravitational stresses in the disk, one can compute an effective $\alpha$. 
 Following \cite{gammie2001} and \citet{lodato2004}, 
@@ -345,7 +347,7 @@ Following \cite{gammie2001} and \citet{lodato2004},
 {\Sigma c_s^2 },
 \end{equation}
 where $\Omega$ is the azimuthally averaged rotation speed, $T_{\varpi\phi}^{grav}$ and $T_{\varpi\phi}^{Reyn}$ represent the  gravitational and Reynolds stress tensors, respectively, $\Sigma$ the surface density,
-and $c_s$ the sound speed. In comparison to \citeauthor{gammie2001}'s 2D models and \citeauthor{lodato2004}'s highly flattened smoothed particle hydrodynamics models, the models presented here have a significant vertical extent. Because of this, the sound speed can vary dramatically from the mid-plane to the low density regions, so it was unclear as to the best way to determine a representative sound speed. In order to include contributions to the sound speed from the entire vertical extent, the denominator $\Sigma c_s^2$ was evaluated as $\int_z \rho c_s^2 {\rm d}z$.
+and $c_s$ the sound speed. In comparison to \citeauthor{gammie2001}'s 2D models and \citeauthor{lodato2004}'s highly flattened smoothed particle hydrodynamics models, the models presented here have a significant vertical extent. Because of this, the sound speed can vary dramatically from the mid-plane to the low density regions, so it was unclear as to the best way to determine a representative sound speed {\bf (we should drop the last phrase/sentence - TSC)}. In order to include contributions to the sound speed from the entire vertical extent, the denominator $\Sigma c_s^2$ was evaluated as $\int_z \rho c_s^2 {\rm d}z$.
  
 %Gammie found
 %\begin{equation}
@@ -395,7 +397,8 @@ as the grid spacing goes to zero.   This falls squarely
 between the $\alpha_{avg}$ values for the Gammie curves 0.014 (strongly self-gravitating) and 0.027 (non-self-gravitating).
 
 At first glance, these results suggest strong agreement with Gammie and thus strong support for dissipative
-locality and GIs acting as a local mechanism overall.  However, several cautionary notes are in order. It is important to remember that the bulk of the gravitational torque, and therefore the $\alpha_{\rm{eff}}$, is generated by low order modes that are coherent over tens of AU. As table \ref{tbl:ams} shows, even at the highest resolution, and lowest relative strength of low-order modes, the $A_{2-7}$ modes account for half of the total amplitude. In order to accurately measure and characterize the contribution from these modes, one must consider a significant fraction of the disk. Furthermore, simulations of disks with a large radial extent (e.g. 100s of AU \citep{boley2009}) show coherent low order modes over a significant fraction of the disk. In order to determine the radial extent and strength of such modes one should consider the entire range of radii over which the disk is susceptible to instabilities i.e. $Q \lesssim 1.5$.  
+locality and GIs acting as a local mechanism overall.  However, several cautionary notes are in order. It is important to remember that the bulk of the gravitational torque, and therefore the $\alpha_{\rm{eff}}$, is generated by low order modes that are coherent over tens of AU {\bf (TSC: Scott, what is the basis for saying these are coherent over this radial range?)}. As table \ref{tbl:ams} shows {\bf (there is a problem with the table label and reference - it provides the wrong table number for the table caption.  It originally gave the wrong number here (it gave table 3), but moving the location of the label statement to its current location within the table environment fixed the problem here, but not in the table caption. Anyone know how to get this to work? TSC)}, even at the highest resolution, and lowest relative strength of low-order modes, the $A_{2-7}$ modes account for half of the total amplitude {\bf (TSC: but essentially all of the torque - see Fig. 5.  The question becomes, at what range of $m$ can modes begin to be considered ``local''?  The results of Lodato \& Clarke 2004 suggests that $m = 5$ modes are
+reasonably local. )}. In order to accurately measure and characterize the contribution from these modes, one must consider a significant fraction of the disk. Furthermore, simulations of disks with a large radial extent (e.g. 100s of AU \citep{boley2009}) show coherent low order modes over a significant fraction of the disk. In order to determine the radial extent and strength of such modes one should consider the entire range of radii over which the disk is susceptible to instabilities i.e. $Q \lesssim 1.5$.  
 
 In order to predict an $\alpha_{\rm{eff}}$, \citeauthor{gammie2001}'s formula, presented in equation \eqref{eq:gammie}, also requires knowledge of the cooling rate. This is generally not known {\it a priori} for a given disk. Moreover, the cooling rate may not be easily parametrized with a local or global prescription over the entire disk. Simulations with realistic radiative physics \citep{boley2006} have shown that cooling rates can vary substantially as a function of both radius and time in a GI active disk. In fact, it is these areas where the cooling rates change, leading to more or less GI activity, where many interesting phenomena may occur. 
 
@@ -406,7 +409,7 @@ normalized to its average value between at $t = 14$ and 18 ORP, at seven radial 
 Also shown is the orbital period at each radius, provided by the length of the line at the end of each subplot. 
 Fluctuations in $\alpha_{\rm{eff}}$
 on the order of 100\% or more are seen at all radii
-on  time scales range from fractions to integral multiples of the dynamic (orbital) time.  The temporal averaging
+on  time scales ranging from fractions to integral multiples of the dynamic (orbital) time.  The temporal averaging
 of figure \ref{fig:alpha_v_radius} washes out this local variability.
 Thus,
 even in this highly GI-active region, the predictions of Gammie are only valid over many dynamic times 
@@ -465,7 +468,8 @@ Please add any acknowledgements here.
 
 
 \begin{deluxetable}{cccccc}
-\tablecolumns{5} 
+
+ \tablecolumns{5}
 \tablewidth{0pc} 
 \tablecaption{$Q$, Fourier Amplitudes, and $\alpha$} 
 \tablehead{ 
@@ -475,18 +479,20 @@ Please add any acknowledgements here.
 & \colhead{$\langle A_{2-7} \rangle / \langle A_{tot} \rangle$} 
 & \colhead{$\alpha_{avg}$} \\ 
 } 
+
 \startdata
 64   & 1.26 & 1.96 &  0.76 & 0.069 \\
 128 & 1.24 & 1.91 &  0.62 & 0.044 \\
 256 & 1.39 & 1.83 &  0.54 & 0.026 \\
 512 & 1.48 & 1.95 &  0.49 & 0.020 \\
-\enddata 
+\enddata  
+\label{tbl:ams}
 \caption{
 All quantities are time-averaged over 12 -- 19 ORP.
 $Q_{avg}$ and $\alpha_{avg}$ are also spatially
 averaged over 10 -- 40 AU.
 }
-\label{tbl:ams}
+
 \end{deluxetable}
 \newpage
 
@@ -540,11 +546,11 @@ Torque Array}
 
 
 \begin{figure}
-\label{fig:alpha_v_radius}
 \plotone{figures/Figure6.eps}
 \caption
 {Effective $\alpha$'s for the $t_{cool} =$ 2 ORP, $\gamma = 5/3$, $\Sigma \sim r^{ -1}$ disk, averaged between 12 and 18 ORPs, for four different different azimuthal grid resolutions, given by the number of azimuthal grid-points $l_{max}$. The dashed lines show the predictions of Gammie (2001) for $\alpha$ (upper: strongly self-gravitating limit, lower: non-self-gravitating limit), while the dashed line at $\log(\alpha) = -1.22$ represents the maximum stress a disk can maintain without fragmenting (Rice et al. 2005). {\bf suggest removing the Rice line if it is not discussed in the paper.} 
 }
+\label{fig:alpha_v_radius}
 \end{figure}
 \newpage
 

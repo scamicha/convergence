@@ -109,8 +109,10 @@ evolution of  protostellar disks \citep[for reviews, see][]{durisen2005, durisen
 Thermal processes play the primary role in regulating the amplitude and outcome of these instabilities \citep{pickett1998,pickett2000,pickett2003,nelson1998,nelson2000a, mejia2005}. A disk's susceptibility to GIs can be parameterized by the Toomre $Q$-parameter \citep{toomre1981};  $Q = c_s \kappa / \pi G \Sigma$, where $c_s$ is the sound speed, $\kappa$ is the epicyclic frequency ($\sim$ the rotation frequency 
 $\Omega$ in a nearly Keplerian disk), and $\Sigma$ is the disk surface mass density. For $Q \al$ 1.7,  small density perturbations in a disk grow exponentially on a timescale comparable to the rotation period \citep{durisen2007}. These perturbations manifest themselves as multi-arm spirals with a predominantly trailing pattern that transports angular momentum outward by gravitational torques \citep{larson1984,boss1984,durisen1986,papaloizou1991, laughlin1994,nelson1998,pickett1998}. 
 
-Numerous studies have shown that thermal physics control GI amplitudes by a {\it balance} of heating and cooling \citep[e.g.,][]{tomley1991,tomley1994,pickett1998,pickett2000, pickett2003,gammie2001,boss2002,rice2003b,mejia2005,boley2006,boley2007, stamatellos2008,cossins2009}.
-Heating by GIs tends to increase $c_s$, thus increasing $Q$. If disk heating persists, the instability will be suppressed once $Q$ becomes sufficiently large.  However, heating and cooling can reach a balance at nonlinear wave amplitude. GI-activity can sustain this balance  at a relatively constant,
+Numerous studies have shown that thermal physics control GI amplitudes by a {\it balance} of heating and cooling \citep[e.g.,][]{tomley1991,tomley1994,pickett1998,pickett2000, pickett2003,gammie2001,boss2002,rice2003b,mejia2005,boley2006,boley2007b, stamatellos2008,cossins2009}.
+Heating by GIs tends to increase $c_s$, thus increasing $Q$. If disk heating persists, the instability will be
+suppressed once $Q$ becomes sufficiently large.  On the other hand, radiative cooling tends to oppose the increase in
+$Q$ by lowering $c_s$. In this way, heating and cooling can reach a rough overall balance at nonlinear wave amplitude. GI-activity can sustain this balance  at a relatively constant,
 but unstable, value of $Q$ \citep{paczynski1978, lin1981,goldreich1965}, and 
 the disk can exist in a state of quasi-equilibrium. In this state, cooling is 
 balanced by heating arising from the inward flow of matter and shocks induced by the GIs
@@ -141,7 +143,7 @@ higher-order modes dissipate energy on shorter wavelengths than lower-order mode
 available to a disk is set by the resolution of the simulation.
 
 \citet{shakura1973} proposed turbulence as the primary source of effective viscosity in gas disks
-and parameterized turbulent transport in a steady-state disk with the  parameter $\alpha$.  In this case,  the kinematic
+and parameterized turbulent transport in a steady-state disk with the  parameter $\alpha$ \citep[see also][]{pringle1981}.  In this case,  the kinematic
 viscosity is defined by $\nu = \alpha c_s H$, where  $c_s$ is the sound speed and $H$ is the disk height.
 The source of the 
 turbulence in their $\alpha$-disk formulation is unspecified. Although their original work was directed towards X-ray bright
@@ -153,10 +155,10 @@ The $\alpha$ formalism makes no assumption about the nature of the angular momen
 and heating are dominated by local processes}. \citet{lin1987,lin1990} were among the first to suggest
 that GI-induced transport could be described within a viscous
 framework.  However, the  validity of an $\alpha$-disk picture requires self-consistency of local energy dissipation. 
-The locality of dissipation in GI-active disks has not been rigorously tested and remains an open question. 
+The locality of dissipation in GI-active disks has not been thoroughly tested and remains an open question \citep{lodato2004,lodato2005,boley2006}. 
 
 In fact, several studies support the idea that angular momentum transport by GIs in real disks is, in many important respects, an intrinsically global phenomenon and cannot be properly treated by a local $\alpha$-like prescription \citep{laughlin1996, balbus1999, lodato2005, mejia2005, boley2006, cai2008}.  This almost certainly applies to the embedded phase of both high and low-mass stars when infall from the collapsing protostellar cloud feeds mass into the disk at a rapid
-rate \citep[e.g.,][]{yorke1993, laughlin1994, yorke1999,vorobyov2005,vorobyov2006}.  
+rate \citep[e.g.,][]{yorke1993, laughlin1994, yorke1999,vorobyov2005,vorobyov2006,kratter2010}.  
 However, despite the long-distance nature of gravitational torques, theoretical and numerical results suggest that in protostellar disks where heating and cooling are in rough balance, 
  it may be valid to represent GI-induced transport by an {\it effective viscosity}, as if it were a local process \citep{gammie2001, lodato2004, rice2005, cossins2009, vorobyov2010}.  In particular, multiple studies suggest that
 an effective $\alpha$-viscosity may be consistent
@@ -167,10 +169,13 @@ We note, however, that the these studies all assumed
 a {\it local cooling time}, $t_{cool}\Omega =$ constant, 
 where $t_{cool}$ is defined by the rate at which cooling decreases the disk's internal energy density
 $\epsilon$ by $d\epsilon/dt = \epsilon / t_{cool}$.  In contrast, we and our collaborators use either a {\it global cooling time},
-$t_{cool} = $ constant \citep[e.g.,][this paper]{pickett2003, mejia2005}, or use realistic opacities \citep[e.g.,][]{mejiaphd2004, cai2006, cai2008, boley2006, boley2007,  boley2009} which lead to something in between $t_{cool} = $ constant  and
-$t_{cool}\Omega =$ constant. 
+$t_{cool} = $ constant \citep[e.g.,][this paper]{pickett2003, mejia2005}, or use realistic opacities \citep[e.g.,][]{mejiaphd2004, cai2006, cai2008, boley2006, boley2007b,  boley2009} which lead to something in between $t_{cool} = $ constant  and
+$t_{cool}\Omega =$ constant. The review by \citet{durisen2007} discusses some consequences of these various
+choices. There is a tendency for $t_{cool}\Omega =$ constant to bias a disk toward behavior like that of a
+steady-state $\alpha$-disk.
 
-\citet{gammie2001} derived an effective alpha for the case of a thin gravitationally unstable disk where the heating caused by GIs was balanced by the local cooling rate.  
+\citet{gammie2001} derived an effective $\alpha$ for the case of a thin gravitationally unstable disk where the heating
+caused by GIs was balanced by the local cooling rate \citep[see also][]{pringle1981}.  
 Assuming a local cooling time of $t_{cool}\Omega =$ constant,  Gammie found
 \begin{equation}
 \alpha_{\rm{eff}} = [\gamma(\gamma - 1) \slantfrac{9}{4}\Omega t_{cool}]^{-1},
@@ -185,7 +190,7 @@ disk and
 $\gamma = 3 - 2/\Gamma $
 for a strongly self gravitating disk.   \cite{lodato2004} derived a similar result when considering three-dimensional protoplanetary disks.
 Fully 3D simulations \citep[e.g.,][]{lodato2004, cossins2009} suggest that, at least in the case of imposed 
-$t_{cool}\Omega = $ constant cooling, $\alpha_{\rm{\rm{eff}}}$ roughly converges to the value predicted by \citeauthor{gammie2001}. 
+$t_{cool}\Omega = $ constant cooling, $\alpha_{\rm{\rm{eff}}}$ roughly converges to the value given by equation (\ref{eq:gammie}). 
 
 In what follows, we address these and related questions using a grid-based, finite-difference 3D hydrodynamics code with 
 self-gravity to follow the evolution of a protostellar disk with a constant cooling time and subject to GIs.
@@ -218,7 +223,7 @@ In the process,
 we report the results of a convergence study designed to determine whether GI-active disks, chaotic by nature, achieve statistical equilibrium.   If this is the case, we investigate how closely these disks approximate equation (1) from
  \citet{gammie2001} and examine the distribution of $\alpha_{\rm{eff}}$. 
 
-The balance of this paper is organized as follows.  Section 2 provides the details of the numerical approach and defines the models.  An analysis of the azimuthal density structures of the simulations 
+The remainder of this paper is organized as follows.  Section 2 provides the details of the numerical approach and defines the models.  An analysis of the azimuthal density structures of the simulations 
 is found in \S3.1, the gravitational torques arising from these structures follows in \S3.2.  Effective converged alphas are 
 discussed in \S3.3.  Section 3.4 deals with the degree to which selected grid-sizes lead to results consistent with
 convergence.  Fragmentation is discussed in \S3.5.  A summary of results is found in \S4.
@@ -232,9 +237,17 @@ mediate shocks. Source and flux terms \citep{norman1986} are computed separately
 Initial conditions for the disk's structure and thermodynamic state were set using an equilibrium star plus disk model generated by a modified \citet{hachisu1986} self-consistent field relaxation method \citep{pickett1996,pickett2003,mejiaphd2004,mejia2005,cai2006}. Here  the density and angular momentum distributions are iteratively solved, using the specified equation of state,  until convergence is achieved. This  equilibrium disk was 
 given random cell-to-cell $\sim10^{-4}$ density perturbations to seed growth of  GIs.  The resultant marginally unstable disk served as the initial disk for the simulation.
 
-Because this is a polytropic disk with an idealized cooling time, only the ratio of disk to stellar mass, given here by 0.153, is specified.  In what follows, quantities specified with real physical units are derived assuming a 1 $M_\odot$ central star and a 0.153  $M_\odot$ disk. In this case, the outer rotation period (ORP) is defined at $r = 33$ AU and one ORP $\approx$ 214 years.  The disk has an initial surface density that approximates $\Sigma \sim r^{ -1}$, with initial inner and outer radii of 2.3 and 40 AU, respectively. 
+Because this is a polytropic disk with an idealized cooling time, only the ratio of disk to stellar mass, given here by
+0.153, is specified.  In what follows, quantities specified with real physical units are derived assuming a 1 $M_\odot$
+central star and a 0.153  $M_\odot$ disk. In this case, the outer rotation period (ORP) is defined at $r = 33$ AU and
+one ORP $\approx$ 214 years.  The disk has an initial surface density $\Sigma \sim r^{ -1}$, with initial inner and
+outer radii of 2.3 and 40 AU, respectively. The construction of these initial equilibrium disk models is discussed in
+\citet{pickett2003} and \citet{mejia2005}.
 
- We assume an equation of state $P = (\gamma -1)\epsilon$, where $P$ is the pressure, $\epsilon$ is the internal energy density, and $\gamma$ is the ratio of specific heats, given here by $\gamma = 5/3$.  The model disks are cooled by decreasing their internal energy according to the prescription $d\epsilon/dt = \epsilon / t_{cool}$, where $t_{cool}$ is the global cooling time, which is set to 2 ORP everywhere. 
+ We assume an equation of state $P = (\gamma -1)\epsilon$, where $P$ is the pressure, $\epsilon$ is the internal energy
+ density, and $\gamma$ is the ratio of specific heats, given here by $\gamma = 5/3$. As discussed in \citet{boley2007a},
+ the rotation states of $H_2$ are probably not excited in the cold outer parts of the disk ($\gtr 10$ AU); so $\gamma =
+ 5/3$ is an appropriate choice. The model disks are cooled by decreasing their internal energy according to the prescription $d\epsilon/dt = \epsilon / t_{cool}$, where $t_{cool}$ is the global cooling time, which is set to 2 ORP everywhere. 
  
 The initially unstable disk model passed through several phases of evolution \citep[see also][]{pickett2003, mejia2005}.  
 During the initial axisymmetric phase, 
@@ -363,7 +376,9 @@ torques arising from the $m=1$ mode,
 typically 5-10\% of the total torque when averaged over the radial range of the figure,
 should not be considered realistic.  
 \citet{michael2010} found that freeing the star changes the torques by about 10-20\%, 
-thus the difference between torques arising from the $m=1$ mode with the star fixed and free to move are small compared to the differences found when comparing azimuthal resolution.
+thus the difference between torques arising from the $m=1$ mode with the star fixed and free to move are small compared
+to the differences found when comparing azimuthal resolution. In fact, it is expected that the $m =1$ mode would only be
+effective at higher disk-to-star mass ratios \citep{shu1990}.
 
 We note two results in figure \ref{fig:torquearray}: 1) the total gravitational torque is smaller for higher resolution simulations and 2) the total torque is dominated by low-order Fourier components for all azimuthal resolutions. Both reflect the fact that while a higher fraction of the total power in larger $l_{max}$ simulations is in higher-order $m$-values, these structures make only minimal contributions to the gravitational torque. As resolution increases, non-axisymmetric amplitude is shifted from 
 low-order global components, which produce relatively large gravitational torques, to high-order local structures, which tend to cancel each other when integrated over the whole disk. 
@@ -444,7 +459,7 @@ is probably not possible for GI-unstable disks,
 except perhaps near the corotation radius of a spiral wave.
 For the lowest-order modes in our disk, this is approximately centered at $\sim 25$ AU.
 
-In order to predict an $\alpha_{\rm{eff}}$, \citeauthor{gammie2001}'s formula, presented in equation \eqref{eq:gammie}, also requires knowledge of the cooling time. This is generally not known {\it a priori} for a given disk. Moreover, the cooling time may not be easily parametrized with a local or global prescription over the entire disk. Simulations with realistic radiative physics \citep{boley2006} have shown that cooling times can vary substantially as a function of both radius and time in a GI active disk. In fact, it is these areas where the cooling rates change, leading to more or less GI activity, where many interesting phenomena may occur.
+In order to compare an $\alpha_{\rm{eff}}$, \citeauthor{gammie2001}'s formula, presented in equation \eqref{eq:gammie}, also requires knowledge of the cooling time. This is generally not known {\it a priori} for a given disk. Moreover, the cooling time may not be easily parametrized with a local or global prescription over the entire disk. Simulations with realistic radiative physics \citep{boley2006} have shown that cooling times can vary substantially as a function of both radius and time in a GI active disk. In fact, it is these areas where the cooling rates change, leading to more or less GI activity, where many interesting phenomena may occur.
 In addition, at any given radius, the
 stresses, and hence $\alpha_{\rm{eff}}$, are highly variable with time.
 Figure \ref{fig:alphavar} shows the time-variability of $\alpha_{\rm{eff}}$, 
@@ -453,14 +468,14 @@ for times later than 12 ORP.
 Here the time axis is normalized to the orbital time.  Because the orbital periods are nearly
 Keplerian, at smaller radii the disk is followed for many more dynamical times than at larger
 radii.  For ease of comparison, 
-only the last 14 orbit are shown for $r = 10$ and 15.
+only the last 14 orbits are shown for $r = 10$ and 15.
 Fluctuations in $\alpha_{\rm{eff}}$
 on the order of 100\% or more are seen at all radii
 on  timescales characteristic of the local dynamical time, indicating that
 this variability about the average is local in nature.  The temporal averaging
 of figure \ref{fig:alpha_v_radius} washes out this local variability.
 Thus,
-even in this highly GI-active region, the predictions of Gammie are only valid over many dynamic times 
+even in this highly GI-active region, Gammie's formula only seems valid over many dynamic times 
 when averaged over a substantial volume of the disk. 
 
 
@@ -493,13 +508,27 @@ would be worthwhile.
 \noindent
 
 Under certain conditions, GIs fail to self-regulate, allowing density perturbations to grow until clumps form from spiral structure (see Durisen et al. 2007 for references).  Under isothermal conditions, fragmentation becomes very likely whenever $Q$ drops below 1.4 
-\citep{tomley1991, tomley1994, nelson1998, mayer2002}. When the effective adiabatic index is stiff due to inefficient cooling, shocks and mass transport can militate against fragmentation, even in disks with initially low $Q$ values \citep[e.g., ][]{boley2008}. To understand the degree of cooling required to effect clump formation in non-isothermal disks, \cite{gammie2001} studied the nonlinear behavior of GIs using a series of shearing sheet simulations.  He showed that  a gravitationally unstable disk is likely to fragment whenever the cooling time is less than half the local orbital period.  This work was followed by Rice et al.~(2005), who used global 3D SPH simulations and found that the fragmentation limit was dependent on the adiabatic index.   For disks with $\gamma=5/3$, they found fragmentation 
+\citep{tomley1991, tomley1994, nelson1998, mayer2002}. When the effective adiabatic index is stiff due to inefficient
+cooling, shocks and mass transport can militate against fragmentation, even in disks with initially low $Q$ values
+\citep[e.g., ][]{boley2008}. To understand the degree of cooling required to effect clump formation in non-isothermal
+disks, \cite{gammie2001} studied the nonlinear behavior of GIs using a series of shearing sheet simulations.  He showed
+that  a gravitationally unstable disk is likely to fragment whenever the cooling time is less than half the local
+orbital period ($t_{cool}\Omega = 3$).  This work was followed by Rice et al.~(2005), who used global 3D SPH simulations and found that the fragmentation limit was dependent on the adiabatic index.   For disks with $\gamma=5/3$, they found fragmentation 
 occurred whenever the local cooling time was less than the local orbital period. For $\gamma=7/5$, the limit was twice the local orbital period.  \cite{rice2005} proposed that this fragmentation threshold was due to a maximum stress that can  be exerted on a disk by gravitational torques.  Using the $\alpha_{\rm{eff}}$ as defined in equation (8), they found that fragmentation could occur whenever $\alpha_{\rm eff}\gtrsim 0.06$ (the dotted line in figure 6).  The difference between the cooling time threshold found by Gammie and the ones found by Rice et al.~are not obviously at odds, as Gammie's study was conducted in 2D and used a 2D adiabatic index of 2.  
 
-Recently, these results have been called into question by \cite{meru2011a}, who suggest that our understanding of the fragmentation criterion is based on simulations that have yet to converge.  In particular, they find that fragmentation becomes increasingly likely for longer cooling times when the resolution in their 3D SPH simulations is increased, giving weight to the claims by, e.g., \cite{boss2009}, that fragmentation is a robust result of disk instability. The Meru \& Bate study uses a prescribed cooling such that $t_{\rm cool}=\beta\Omega^{-1}$, where $\Omega$ is the local orbital frequency and $\beta$ is some global constant.  This same cooling prescription was used in the Gammie and Rice et al.~studies.  The reason for the differences is unclear, and may not be simply a resolution effect (see Lodato \& Clarke 2011, arXiv:1101.2448).  For example, the \cite{gammie2001} simulations, which are at very high resolution due to the local limit, require the most stringent cooling of all the simulations.  Moreover, \cite{mejia2005}, who used grid-based simulations with the same code we use here, and  \cite{boley2008}, who used radiative hydrodynamics simulations, also found results that are reasonably consistent with those of Gammie, Rice et al., and \cite{cossins2010}. 
+Recently, these results have been called into question by \cite{meru2011a}, who suggest that our understanding of the
+fragmentation criterion is based on simulations that have yet to converge.  In particular, they find that fragmentation
+becomes increasingly likely for longer cooling times when the resolution in their 3D SPH simulations is increased,
+giving weight to the claims by, e.g., \cite{boss2009}, that fragmentation is a robust result of disk instability. The
+Meru \& Bate study uses a prescribed cooling such that $t_{\rm cool}=\beta\Omega^{-1}$, where $\Omega$ is the local
+orbital frequency and $\beta$ is some global constant.  This same cooling prescription was used in the Gammie and Rice
+et al.~studies.  The reason for the differences is unclear, and may not be simply a resolution effect (see Lodato \&
+Clarke 2011, arXiv:1101.2448).  For example, the \cite{gammie2001} have revealed the most stringent cooling criterion of
+all the $t_{cool}$ fragmentation studies, and, due to the local approximation Gammie used, these simulations are also at
+very high resolution. Moreover, \cite{mejia2005}, who used grid-based simulations with the same code we use here, and  \cite{boley2008}, who used radiative hydrodynamics simulations, also found results that are reasonably consistent with those of Gammie, Rice et al., and \cite{cossins2010}. 
 
 The present convergence study does not address fragmentation directly, but there are several results that should be noted.  First, although the total power in non-axisymmetric structure is roughly constant throughout the simulations, the average $Q$ value increases with increasing resolution (Table 1).  Because both fast cooling and a low $Q$ are necessary
-for fragmentation, this suggests that the disk is becoming less susceptible to clump formation with increasing resolution.   Second, the disks do not show a trend toward denser spiral structure as the resolution is increased, which is seen by eye in figure 2, and is quantified by the decrease in $\left<A_{2-7}\right>$.  The high-$m$ modes are increasing in power, but remain smaller than the low-$m$ components.   Third, our results show that as the resolution increases, the disk approaches a self-regulating state that is reasonably well-described, in the time- and space-average sense, by an $\alpha$-disk with the parameterization of \cite{gammie2001}. 
+for fragmentation, this suggests that the disk is becoming less susceptible to clump formation with increasing resolution.   Second, the disks do not show a trend toward denser spiral structure as the resolution is increased which is seen by eye in figure 2, and is quantified by the decrease in $\left<A_{2-7}\right>$.  The high-$m$ modes are increasing in power, but remain smaller than the low-$m$ components.   Third, our results show that as the resolution increases, the disk approaches a self-regulating state that is reasonably well-described, in the time- and space-average sense, by an $\alpha$-disk with the parameterization of \cite{gammie2001}. 
 
 Some caution must be taken when applying our results generally.  The structure of the disk at the time of the onset of GIs may have a large impact on fragmentation.  For example, \cite{boley2009} found that for disks with the same mass and {\it total} mass accretion rate, the disk with the shallower density profile fragmented, while the other did not \citep[see also ][]{meru2011b}.  The disks explored here evolve to a surface density profile of approximately $p=5/2$ in the outer regions for $\Sigma\propto r^{-p}$, while those explored by \citet{meru2011a} have a shallower profile ($p=1$), favoring fragmentation.  In addition to disk structure, the thermal history of the disk also plays a role in the fragmentation threshold.  \cite{clarke2007}  found that the fragmentation cooling limit is sensitive to the way the instability is approached.  When the cooling time is decreased slowly, the fragmentation limit is pushed toward shorter cooling times than if a fast cooling time is suddenly prescribed.  
 
@@ -671,7 +700,11 @@ The simulations differ only in the number of  azimuthal zones used in the calcul
 \plotone{Figure3.eps}
 \caption
 {
-The logarithm of the amplitudes for the global Fourier components of the non-axisymmetric density structure plotted for different $m$-values. Notice that the components with the highest global amplitudes are those with low $m$-values; $m=2$ through 6 are labeled.  The vertical dotted line corresponds with $m=7$.  For modes with $m < 7$,  the radial range from  the inner Linblad resonance to the outer Linblad resonance exceeds the disk scale height; these quantities are roughly equal for $m = 7$.
+The logarithm of the amplitudes for the global Fourier components of the non-axisymmetric density structure plotted for
+different $m$-values. Notice that the components with the highest global amplitudes are those with low $m$-values; $m=2$
+through 6 are labeled.  The vertical dotted line corresponds with $m=7$.  For modes with $m < 7$,  the radial range
+$\Delta r_{LR}$ from  the inner Linblad resonance to the outer Linblad resonance exceeds the disk scale height; the
+$\Delta r_{LR}$ and scale height are roughly equal for $m = 7$.
 }
 \label{fig:Am_vs_log_m}
 \end{figure}
@@ -707,7 +740,11 @@ components for all azimuthal resolutions.  While a higher fraction of the total 
 \begin{figure}
 \plotone{Figure6.eps}
 \caption
-{Effective $\alpha$'s for the $t_{cool} =$ 2 ORP, $\gamma = 5/3$, $\Sigma \sim r^{ -1}$ disk, averaged between 12 and 18 ORPs, for four different different azimuthal grid resolutions, given by the number of azimuthal grid-points $l_{max}$. The dashed lines show the predictions of Gammie (2001) for $\alpha$ (upper: strongly self-gravitating limit, lower: non-self-gravitating limit), while the dashed line at $\log(\alpha) = -1.22$ represents the maximum stress a disk can maintain without fragmenting (Rice et al. 2005). 
+{Effective $\alpha$'s for the $t_{cool} =$ 2 ORP, $\gamma = 5/3$, $\Sigma \sim r^{ -1}$ disk, averaged between 12 and 18
+  ORPs, for four different azimuthal grid resolutions, given by the number of azimuthal grid-points $l_{max}$. The
+  dashed lines show the $\alpha$ from equation (\ref{eq:gammie}) (upper: strongly self-gravitating limit, lower:
+  non-self-gravitating limit), while the dotted line at $\log(\alpha) = -1.22$ represents the maximum stress a disk can
+  maintain without fragmenting according to \citet{rice2005}. 
 }
 \label{fig:alpha_v_radius}
 \end{figure}
@@ -716,9 +753,9 @@ components for all azimuthal resolutions.  While a higher fraction of the total 
 \begin{figure}
 \plotone{Figure7.eps}
 \caption{
-Local value of alpha at seven radii shown as a function of the local dynamical time.  For radii greater than 20 AU, the plot shows 
+Local value of $\alpha$ at seven radii shown as a function of the local dynamical time.  For radii greater than 20 AU, the plot shows 
 the variation from 12 to 18 ORP.  At 10 and 15 AU, the 14 orbit periods immediately prior to 18 ORP are shown.
-Dotted lines at an ordinate value of one  represent the averages from 14 to 18 ORP at that radius.
+Dotted lines at an ordinate value of unity represent the average from 14 to 18 ORP at that radius.
 Note that the local $\alpha$ displays $\sim$ 100\% variations on the local dynamical time. 
 }
 \label{fig:alphavar}

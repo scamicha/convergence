@@ -1,0 +1,121 @@
+This is the response to the first referee report for ApJ submission MS#ApJ83382
+
+My primary concern with the analysis is the neglect of the Reynolds stress component when calculating the effective \alpha viscosity. The authors show that as the disk resolution is increased, more power is transferred into higher m-structures approaching the dissipation scale in the code. It seems likely that the shift also causes velocity correlations on this scale, which would produce extra angular momentum transport and thus a higher effective \alpha.
+
+I do not understand the author's claim that it is too difficult or unreliable to measure Reynolds stresses. This paper would be greatly improved by showing how the Reynolds term evolves with resolution. In fact, I wonder whether all or some of the decrease in the transport at higher resolution would disappear if this latter term were included.
+
+In addition to measuring the Reynolds stresses directly, the authors could also look at the mass accretion rate through rings in order to quantify the effective \alpha. The latter would be another way to get at the contribution from Reynolds stresses.
+
+The authors could also measure the net heating in their simulation to quantify the effective \alpha via dissipation. This would give again more insight into the effect of resolution on the critical cooling time or the value of \alpha as a function of (Q). Even though the authors state that their results are converging and not fragmenting, a lower effective \alpha should imply less heating, and thus increase the critical cooling time. Of course, if \alpha is more and more dominated by Reynolds terms, than the heating rate and effective alpha might not decline. This is a very important distinction.  The comment in the summary that Q is increasing with increasing resolution suggests that there is more heating, and thus more dissipation.
+
+All of my other concerns are minor, and listed in page order below:
+
+-pg 4:  "However, heating and cooling can reach a balance at nonlinear..."
+More explanation would be useful to improve the readability for non-experts
+
+* Explanation added: In this way, heating and cooling can reach a rough overall balance at nonlinear wave amplitude. GI-activity can sustain this balance at a relatively constant, but unstable, value of Q (Paczynski 1978; Lin 1981; Goldreich & Lynden-Bell 1965), and the disk can exist in a state of quasi-equilibrium. In this state, cooling is balanced by heating arising from the inward flow of matter and shocks induced by the GIs (Gammie 2001; Lodato & Rice 2004; Rice et al. 2005; Boley et al. 2006; Cossins et al. 2009; Vorobyov 2010).
+
+pg 5: Sunyaev is misspelled, and a citation should be given to Pringle 81 for the cited  \alpha  formalism
+(SS73 is magnetic, and with a slightly different scaling)
+
+*Spelling fixed, and Pringle cited
+
+pg 6: A citation to Rice & Lodato 04-05 should be included as they tested the locality of transport and
+dissipation.
+
+*Citation included
+
+pg 6: A citation to Kratter et al 2010, Walsh et al 2010 would also be appropriate for models of embedded GI
+unstable accretion disks.
+
+*Kratter citation included, however we were unable to locate the Walsh paper referenced here.
+
+pg 7: I don't understand the emphasis on local vs "global" cooling time. I can see that a global cooling time
+will make the entire disk go unstable at the same time (inner radii get to Q=1 faster), but it is no more
+physical than the "local" choice, which allows for a cancellation in the energy equation and thus produces the
+dimensionless criterion. The authors should provide some explanation of this issue, or of their choice. Of
+course the difference between these two is irrelevant for Gammie's simulation.
+
+*First paragraph on page 7 rewritten to attempt to elucidate this issue.
+
+pg 8: Purely stylistic, but the phrase "the balance of this paper" see odd to me (rather than "the remainder
+of this paper")
+
+*Changed
+
+pg 8: "alpha" should be a letter
+
+*Changed
+
+pg 9: "Source and flux terms..." The authors should explain what these are physically.
+
+*Citations included which explain this in detail.
+
+pg 9: What does is mean that the surface density approximates 1/r?
+
+*Wording changed to be more clear.
+
+pg 9: The authors use \gamma  = 5/3 for a protostellar disk, which should be \gamma=7/5. It would be useful to
+note this as the critical cooling boundary is a function of \gamma.
+
+*Discussion and citations to Boley et al. 2007, who cover this issue in great detail are included. In fact, it
+ is not clear what the appropriate choice is when using a fixed \gamma.
+
+pg 13: A footnote explaining Richardson extrapolation might be useful
+
+*Citation to Numerical Recipes included.
+
+pg 14: "only the last 14 orbit" -> orbits
+
+*Changed
+
+pg 15: Note that the effectiveness of the m=1 mode depends on the disk to star mass ratio. (cite Adams et al
+1989)
+
+*Citation to Shu et al. 1990 included.
+
+pg 16: above eq 8: this seems like a lot of citation for one equation...
+
+pg 16: The note that Gammie found that Reynolds stresses were important, might also be related to the higher resolution.
+
+pg 20: It is not quite accurate to equate inefficient cooling with a stiff equation of state in the context of
+these simulations. One can set the cooling time to be quite short, and \gamma to be quite stiff.
+
+*What is written in the manuscript is correct. The key word is "effective." A short cooling time for a truly stiff cp/cv=gamma makes the effective gamma nonstiff.  The classic example is an isothermal gas.  We avoid possible confusion on this issue by not addressing this additional complexity. 
+
+pg 20: "militate against" Do you mean mitigate?
+
+*No
+
+pg 20:  It might be useful to include a footnote saying that you are using orbital periods instead of \Omega
+to quote the critical values for the cooling time.
+
+*Text modified as follows: "half the local orbital period (tcool~3/Omega)."
+
+pg 21: The sentence starting "For example, the Gammie 2001 simulations..." is confusingly written. Also, I disagree with the description of the Meru and Bate results adding "weight to the claims by e.g. Boss..". It seems clear that unless dissipation is dramatically non-local, there must be a relation between the rate of dissipation and cooling. I don't think Boss is claiming that this doesn't exist, just that cooling isn't a problem.
+
+*Modified as follows: "For example, the Gammie (2001) simulations have revealed the most stringent cooling
+criterion of all the tcool-fragmentation studies, and due to the local approximation Gammie used, the
+simulations are also at very high resolution."
+
+Figures:
+
+General comment: the numbers on the axes are somewhat small on all of the figures. Depending on how they are eventually sized in publication, I can imagine some of them being hard to read.
+
+fig 3 caption: "these quantities are roughly..." I don't know what this refers to
+
+*Rewritten for clarity.
+
+fig 5: While I appreciate the black and white legibility of this diagram, color might be useful for online
+readers (or those who print in color) to distinguish between the various curves
+
+*Both color and B/W versions of the figures have been provided.
+
+fig 6: "different different". The flat line looks dotted to me (not dashed). I also think it is misleading to
+describe Gammie's as a prediction, and Rice et al 2005 as more of a "fact"
+
+*This has been corrected
+
+fig 7: "alpha" should be the letter. I find the caption description of the dotted lines confusing.
+
+*This has been corrected

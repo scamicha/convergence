@@ -1,22 +1,42 @@
 This is the response to the first referee report for ApJ submission MS#ApJ83382
 
-My primary concern with the analysis is the neglect of the Reynolds stress component when calculating the effective \alpha viscosity. The authors show that as the disk resolution is increased, more power is transferred into higher m-structures approaching the dissipation scale in the code. It seems likely that the shift also causes velocity correlations on this scale, which would produce extra angular momentum transport and thus a higher effective \alpha.
+My primary concern with the analysis is the neglect of the Reynolds stress component when calculating the
+effective \alpha viscosity. The authors show that as the disk resolution is increased, more power is
+transferred into higher m-structures approaching the dissipation scale in the code. It seems likely that the
+shift also causes velocity correlations on this scale, which would produce extra angular momentum transport
+and thus a higher effective \alpha.
 
-I do not understand the author's claim that it is too difficult or unreliable to measure Reynolds stresses. This paper would be greatly improved by showing how the Reynolds term evolves with resolution. In fact, I wonder whether all or some of the decrease in the transport at higher resolution would disappear if this latter term were included.
+I do not understand the author's claim that it is too difficult or unreliable to measure Reynolds
+stresses. This paper would be greatly improved by showing how the Reynolds term evolves with resolution. In
+fact, I wonder whether all or some of the decrease in the transport at higher resolution would disappear if
+this latter term were included.
 
-In addition to measuring the Reynolds stresses directly, the authors could also look at the mass accretion rate through rings in order to quantify the effective \alpha. The latter would be another way to get at the contribution from Reynolds stresses.
+In addition to measuring the Reynolds stresses directly, the authors could also look at the mass accretion
+rate through rings in order to quantify the effective \alpha. The latter would be another way to get at the
+contribution from Reynolds stresses.
 
-The authors could also measure the net heating in their simulation to quantify the effective \alpha via dissipation. This would give again more insight into the effect of resolution on the critical cooling time or the value of \alpha as a function of (Q). Even though the authors state that their results are converging and not fragmenting, a lower effective \alpha should imply less heating, and thus increase the critical cooling time. Of course, if \alpha is more and more dominated by Reynolds terms, than the heating rate and effective alpha might not decline. This is a very important distinction.  The comment in the summary that Q is increasing with increasing resolution suggests that there is more heating, and thus more dissipation.
+The authors could also measure the net heating in their simulation to quantify the effective \alpha via
+dissipation. This would give again more insight into the effect of resolution on the critical cooling time or
+the value of \alpha as a function of (Q). Even though the authors state that their results are converging and
+not fragmenting, a lower effective \alpha should imply less heating, and thus increase the critical cooling
+time. Of course, if \alpha is more and more dominated by Reynolds terms, than the heating rate and effective
+alpha might not decline. This is a very important distinction.  The comment in the summary that Q is
+increasing with increasing resolution suggests that there is more heating, and thus more dissipation.
 
 All of my other concerns are minor, and listed in page order below:
 
 -pg 4:  "However, heating and cooling can reach a balance at nonlinear..."
 More explanation would be useful to improve the readability for non-experts
 
-* Explanation added: In this way, heating and cooling can reach a rough overall balance at nonlinear wave amplitude. GI-activity can sustain this balance at a relatively constant, but unstable, value of Q (Paczynski 1978; Lin 1981; Goldreich & Lynden-Bell 1965), and the disk can exist in a state of quasi-equilibrium. In this state, cooling is balanced by heating arising from the inward flow of matter and shocks induced by the GIs (Gammie 2001; Lodato & Rice 2004; Rice et al. 2005; Boley et al. 2006; Cossins et al. 2009; Vorobyov 2010).
+* Explanation added: In this way, heating and cooling can reach a rough overall balance at nonlinear wave
+  amplitude. GI-activity can sustain this balance at a relatively constant, but unstable, value of Q
+  (Paczynski 1978; Lin 1981; Goldreich & Lynden-Bell 1965), and the disk can exist in a state of
+  quasi-equilibrium. In this state, cooling is balanced by heating arising from the inward flow of matter and
+  shocks induced by the GIs (Gammie 2001; Lodato & Rice 2004; Rice et al. 2005; Boley et al. 2006; Cossins et
+  al. 2009; Vorobyov 2010).
 
-pg 5: Sunyaev is misspelled, and a citation should be given to Pringle 81 for the cited  \alpha  formalism
-(SS73 is magnetic, and with a slightly different scaling)
+pg 5: Sunyaev is misspelled, and a citation should be given to Pringle 81 for the cited \alpha formalism (SS73
+is magnetic, and with a slightly different scaling)
 
 *Spelling fixed, and Pringle cited
 
@@ -81,7 +101,9 @@ pg 16: The note that Gammie found that Reynolds stresses were important, might a
 pg 20: It is not quite accurate to equate inefficient cooling with a stiff equation of state in the context of
 these simulations. One can set the cooling time to be quite short, and \gamma to be quite stiff.
 
-*What is written in the manuscript is correct. The key word is "effective." A short cooling time for a truly stiff cp/cv=gamma makes the effective gamma nonstiff.  The classic example is an isothermal gas.  We avoid possible confusion on this issue by not addressing this additional complexity. 
+*What is written in the manuscript is correct. The key word is "effective." A short cooling time for a truly
+ stiff cp/cv=gamma makes the effective gamma nonstiff.  The classic example is an isothermal gas.  We avoid
+ possible confusion on this issue by not addressing this additional complexity.
 
 pg 20: "militate against" Do you mean mitigate?
 
@@ -92,7 +114,11 @@ to quote the critical values for the cooling time.
 
 *Text modified as follows: "half the local orbital period (tcool~3/Omega)."
 
-pg 21: The sentence starting "For example, the Gammie 2001 simulations..." is confusingly written. Also, I disagree with the description of the Meru and Bate results adding "weight to the claims by e.g. Boss..". It seems clear that unless dissipation is dramatically non-local, there must be a relation between the rate of dissipation and cooling. I don't think Boss is claiming that this doesn't exist, just that cooling isn't a problem.
+pg 21: The sentence starting "For example, the Gammie 2001 simulations..." is confusingly written. Also, I
+disagree with the description of the Meru and Bate results adding "weight to the claims by e.g. Boss..". It
+seems clear that unless dissipation is dramatically non-local, there must be a relation between the rate of
+dissipation and cooling. I don't think Boss is claiming that this doesn't exist, just that cooling isn't a
+problem.
 
 *Modified as follows: "For example, the Gammie (2001) simulations have revealed the most stringent cooling
 criterion of all the tcool-fragmentation studies, and due to the local approximation Gammie used, the
@@ -100,7 +126,8 @@ simulations are also at very high resolution."
 
 Figures:
 
-General comment: the numbers on the axes are somewhat small on all of the figures. Depending on how they are eventually sized in publication, I can imagine some of them being hard to read.
+General comment: the numbers on the axes are somewhat small on all of the figures. Depending on how they are
+eventually sized in publication, I can imagine some of them being hard to read.
 
 fig 3 caption: "these quantities are roughly..." I don't know what this refers to
 

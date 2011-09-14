@@ -6,6 +6,12 @@ transferred into higher m-structures approaching the dissipation scale in the co
 shift also causes velocity correlations on this scale, which would produce extra angular momentum transport
 and thus a higher effective \alpha.
 
+* It should be noted that the measurement presented in Table 1 and Figure 3 of the manuscript are those of the
+Fourier amplitudes, as defined in eqns 2 and 3. As can be seen by their definition, these values do not 
+directly measure the power in a given eignmode. In addtion, each particular m value makes a relatively minor 
+contribution for large m (i.e. m > 20). The measurement of A_m also includes no phase information, so A_m
+is *not* necessarily a good indicator of coherent density structures or organized velocity correlations.  
+
 I do not understand the author's claim that it is too difficult or unreliable to measure Reynolds
 stresses. This paper would be greatly improved by showing how the Reynolds term evolves with resolution. In
 fact, I wonder whether all or some of the decrease in the transport at higher resolution would disappear if
@@ -78,8 +84,8 @@ pg 9: What does is mean that the surface density approximates 1/r?
 pg 9: The authors use \gamma  = 5/3 for a protostellar disk, which should be \gamma=7/5. It would be useful to
 note this as the critical cooling boundary is a function of \gamma.
 
-*Discussion and citations to Boley et al. 2007, who cover this issue in great detail are included. In fact, it
- is not clear what the appropriate choice is when using a fixed \gamma.
+*Discussion and citations to Boley et al. 2007, who cover this issue in great detail are now included. In fact,
+it is not clear what the correct physical choice is for molecular hydrogen when using a fixed \gamma.
 
 pg 13: A footnote explaining Richardson extrapolation might be useful
 

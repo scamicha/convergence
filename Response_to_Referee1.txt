@@ -7,27 +7,45 @@ shift also causes velocity correlations on this scale, which would produce extra
 and thus a higher effective \alpha.
 
 * It should be noted that the measurement presented in Table 1 and Figure 3 of the manuscript are those of the
-Fourier amplitudes, as defined in eqns 2 and 3. As can be seen by their definition, these values do not 
-directly measure the power in a given eignmode. In addtion, each particular m value makes a relatively minor 
-contribution for large m (i.e. m > 20). The measurement of A_m also includes no phase information, so A_m
-is *not* necessarily a good indicator of coherent density structures or organized velocity correlations.  
+Fourier amplitudes, as defined in eqns 2 and 3. As can be seen by their definition, these values do not
+directly measure the power in a given eignmode. In addtion, each particular m value makes a relatively minor
+contribution for large m (i.e. m > 20). The measurement of A_m also includes no phase information, so A_m is
+not necessarily a good indicator of coherent density structures or organized velocity correlations.
 
 I do not understand the author's claim that it is too difficult or unreliable to measure Reynolds
 stresses. This paper would be greatly improved by showing how the Reynolds term evolves with resolution. In
 fact, I wonder whether all or some of the decrease in the transport at higher resolution would disappear if
 this latter term were included.
 
+* The difficulty arises from the fact that the Reynolds stress is typically defined as R_ij = rho*u'_i*u'_j
+  where u'_i and u'_j are the fluctuations in the velocity field. The fluctuating pieces of the velocity field
+  are defined as u'_i = u_i - u<avg>_i, but in a gravitationally unstable disk with extended non-axisymmetric
+  spiral structures, the proper definition of u<avg> (particularly in the phi direction) is unclear. We measured the
+  Reynolds stresses using several different definitions for u<avg> and obtained results that varied
+  dramatically (by an order of magnitude in some cases). The cases we tried were, using an azimuthal average
+  for u<avg>_phi and 0 for u<avg>_r, using an average +/- 2 cells in the direction of interest, using an
+  equiangular average in the direction of interest (i.e. the number of cells used in the average for the phi
+  direction increased with resolution), using a +/- 2 cell patch around the cell, and using an equiangular
+  patch. As stated earlier, results for each of these cases varied substantially. It is also not clear what is
+  the proper scale to average over, as one would like to measure the Reynolds stress caused by turbulent
+  motion, not the ordered motion of spiral arms. SAY SOMETHING HERE ABOUT THE MOST LIKELY CASE BEING A MERE FRACTION OF THE GRAV TORQUE
+
 In addition to measuring the Reynolds stresses directly, the authors could also look at the mass accretion
 rate through rings in order to quantify the effective \alpha. The latter would be another way to get at the
 contribution from Reynolds stresses.
+
+* We were able to make this measurement and the mass accretion shows a similar trend to the gravitational
+  torque. In addition we calculated the predicted mass accretion based on the measured torques (see Boley et
+  al. 2006 equation 22). These are roughly in line with the measured mass accretion rates. (See attached
+  figures.)
 
 The authors could also measure the net heating in their simulation to quantify the effective \alpha via
 dissipation. This would give again more insight into the effect of resolution on the critical cooling time or
 the value of \alpha as a function of (Q). Even though the authors state that their results are converging and
 not fragmenting, a lower effective \alpha should imply less heating, and thus increase the critical cooling
 time. Of course, if \alpha is more and more dominated by Reynolds terms, than the heating rate and effective
-alpha might not decline. This is a very important distinction.  The comment in the summary that Q is
-increasing with increasing resolution suggests that there is more heating, and thus more dissipation.
+alpha might not decline. This is a very important distinction. The comment in the summary that Q is increasing
+with increasing resolution suggests that there is more heating, and thus more dissipation.
 
 All of my other concerns are minor, and listed in page order below:
 
@@ -44,7 +62,7 @@ More explanation would be useful to improve the readability for non-experts
 pg 5: Sunyaev is misspelled, and a citation should be given to Pringle 81 for the cited \alpha formalism (SS73
 is magnetic, and with a slightly different scaling)
 
-*Spelling fixed, and Pringle cited
+* Spelling fixed, and Pringle cited
 
 pg 6: A citation to Rice & Lodato 04-05 should be included as they tested the locality of transport and
 dissipation.

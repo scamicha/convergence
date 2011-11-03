@@ -28,7 +28,9 @@ this latter term were included.
   direction increased with resolution), using a +/- 2 cell patch around the cell, and using an equiangular
   patch. As stated earlier, results for each of these cases varied substantially. It is also not clear what is
   the proper scale to average over, as one would like to measure the Reynolds stress caused by turbulent
-  motion, not the ordered motion of spiral arms. SAY SOMETHING HERE ABOUT THE MOST LIKELY CASE BEING A MERE FRACTION OF THE GRAV TORQUE
+  motion, not the ordered motion of spiral arms. In fact, when the Reynolds stress is measured by using a +/-
+  2 cell patch in both directions, the stresses measured are a few percent of the gravitational torques. (See
+  attached figures.)
 
 In addition to measuring the Reynolds stresses directly, the authors could also look at the mass accretion
 rate through rings in order to quantify the effective \alpha. The latter would be another way to get at the
@@ -37,7 +39,7 @@ contribution from Reynolds stresses.
 * We were able to make this measurement and the mass accretion shows a similar trend to the gravitational
   torque. In addition we calculated the predicted mass accretion based on the measured torques (see Boley et
   al. 2006 equation 22). These are roughly in line with the measured mass accretion rates. (See attached
-  figures.)
+  figure.)
 
 The authors could also measure the net heating in their simulation to quantify the effective \alpha via
 dissipation. This would give again more insight into the effect of resolution on the critical cooling time or

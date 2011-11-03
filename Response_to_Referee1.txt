@@ -30,7 +30,9 @@ this latter term were included.
   the proper scale to average over, as one would like to measure the Reynolds stress caused by turbulent
   motion, not the ordered motion of spiral arms. In fact, when the Reynolds stress is measured by using a +/-
   2 cell patch in both directions, the stresses measured are a few percent of the gravitational torques. (See
-  attached figures.)
+  attached figures.) response_to_referee1_fig1a.eps shows the measured torques from the Reynolds stress from
+  10 to 50 AU averaged from 12 to 18 ORP for  LMAX = 64(black), 128(blue), 256(green), and 512(red), while
+  response_to_referee1_fig1b.eps shows the measured gravitational torques averaged over the same time period. 
 
 In addition to measuring the Reynolds stresses directly, the authors could also look at the mass accretion
 rate through rings in order to quantify the effective \alpha. The latter would be another way to get at the
@@ -38,8 +40,14 @@ contribution from Reynolds stresses.
 
 * We were able to make this measurement and the mass accretion shows a similar trend to the gravitational
   torque. In addition we calculated the predicted mass accretion based on the measured torques (see Boley et
-  al. 2006 equation 22). These are roughly in line with the measured mass accretion rates. (See attached
-  figure.)
+  al. 2006 equation 22). These are roughly in line with the measured mass accretion rates. Overall the average
+  from 12 to 18 ORP of the absolute value of the measured rates follows the same trend as the torques. For
+  LMAX = 64 the average of the absolute value of the rate was 8.9 x 10^-7 m_sun/yr, for LMAX = 128 the average
+  of the absolute value of the rate was 3.7 x 10^-7 m_sun/yr, for LMAX = 256 the average of the absolute value
+  of the rate was  2.5 x 10^-7 m_sun/yr, and for LMAX = 512 the average of the absolute value of the rate was
+  2.4 x 10^-7 m_sun/yr. (See attached figure.) In response_to_referee1_fig2.eps the solid lines show the
+  predicted mdots (x10^-6 m_sun/yr) vs. radius (AU) from the measured gravitational torques, while the dashed
+  lines show the actual measured mass accretion rates from 12 to 18 ORP. The color scale is the same as in fig1.
 
 The authors could also measure the net heating in their simulation to quantify the effective \alpha via
 dissipation. This would give again more insight into the effect of resolution on the critical cooling time or

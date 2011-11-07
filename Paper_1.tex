@@ -251,17 +251,17 @@ outer radii of 2.3 and 40 AU, respectively. The construction of these initial eq
  
 The initially unstable disk model passed through several phases of evolution \citep[see also][]{pickett2003, mejia2005}.  
 During the initial axisymmetric phase, 
-which lasts several ORPs, the disk cools and contracts.  The contraction is small radially but dramatic in the vertical direction. Around 3 to 4 ORPs, the instabilities begin to grow to nonlinear amplitudes, and the disk 
-then undergoes a strong burst of GIs that predominantly manifest themselves in a few discrete global spiral modes.  The disk expands violently during the burst phase, producing a significant rearrangement of the disk's mass distribution on a timescale of a few ORPs. This is then followed by a period of several ORPs where heating temporarily washes out some of the non-axisymmetry in the disk.  Finally, following this transition phase, the disk settles into a quasi-steady, long-lived asymptotic 
+which lasts several ORP, the disk cools and contracts.  The contraction is small radially but dramatic in the vertical direction. Around 3 to 4 ORP, the instabilities begin to grow to nonlinear amplitudes, and the disk 
+then undergoes a strong burst of GIs that predominantly manifest themselves in a few discrete global spiral modes.  The disk expands violently during the burst phase, producing a significant rearrangement of the disk's mass distribution on a timescale of a few ORP. This is then followed by a period of several ORP where heating temporarily washes out some of the non-axisymmetry in the disk.  Finally, following this transition phase, the disk settles into a quasi-steady, long-lived asymptotic 
 phase of sustained GI-activity over a large part of the disk, with an overall balance of heating and cooling.
 
 Simulations were run with four different angular resolutions, with grid sizes in cylindrical coordinates $(r,\phi,z)$ of  $(j_{max}, k_{max}, l_{max}) =$ (512,64,64), (512,64,128), (512,64,256), and (512,64,512). 
 For reference, the radius $r = 33$ AU at which the ORP is defined is at radial cell $j = 200$.  The radial grid extends to 512
 to accomodate disk expansion during outburst.
-Because of the computational overhead associated with running each simulation starting from $t = 0$, the $l_{max} =$ 128 simulation was run through the axisymmetric, burst and transition phases. Simulations using $l_{max} =$ 64, 256, and 512 all begin by a linear interpolation of the $l_{max} =$ 128 simulation to higher or lower azimuthal resolution at 9.6 ORPs, near the end of the transition
-phase. Although this strategy saves a large amount of computational time, it limits the scope of the analysis to the asymptotic phase. By 12 ORPs, all four disks appear to have transitioned to the asymptotic state,
-e.g., they all display roughly steady $Q(r)$ profiles starting at $\sim 12$ ORPs.  All simulations were 
-run through $\sim 18$ ORPs.
+Because of the computational overhead associated with running each simulation starting from $t = 0$, the $l_{max} =$ 128 simulation was run through the axisymmetric, burst and transition phases. Simulations using $l_{max} =$ 64, 256, and 512 all begin by a linear interpolation of the $l_{max} =$ 128 simulation to higher or lower azimuthal resolution at 9.6 ORP, near the end of the transition
+phase. Although this strategy saves a large amount of computational time, it limits the scope of the analysis to the asymptotic phase. By 12 ORP, all four disks appear to have transitioned to the asymptotic state,
+e.g., they all display roughly steady $Q(r)$ profiles starting at $\sim 12$ ORP.  All simulations were 
+run through $\sim 18$ ORP.
 
 Figure \ref{fig:Final_Q} shows the Toomre $Q$, as a function of radius, for all four simulations at $t \sim$ 18 ORP.  
 %Table \ref{tbl:ams} 
@@ -277,7 +277,7 @@ In the asymptotic state, GI-active disks develop complex density structures aris
 modes in the disk.  Since the number of modes accessible to the disk depends on the azimuthal resolution \citep{shannon1984}, we expect that higher resolution simulations will exhibit non-axisymmetric amplitude in higher-order modes inaccessible at lower resolution, and these higher-order modes will 
 behave more locally. 
 	
-Figure \ref{fig:DensityPlots}, shows mid-plane and radial densities  at $t \sim 18$ ORPs for the $l_{max} =$ 64, 128, 256, and 512 simulations. It is readily apparent that the character of the non-axisymmetric density structures differ with 
+Figure \ref{fig:DensityPlots}, shows mid-plane and radial densities  at $t \sim 18$ ORP for the $l_{max} =$ 64, 128, 256, and 512 simulations. It is readily apparent that the character of the non-axisymmetric density structures differ with 
 resolution. One can clearly see that the lower resolution simulations, i.e., $l_{max} = 64$ and 128, have primarily low-order structures with $m = 2$ and 3 dominating. In contrast, the higher resolution simulations have much more fine structure, 
 and the low-order $m$-values no longer dominate.  
 The lower resolution (smaller $l_{max}$) simulations display longer wavelength spiral structures, with larger amplitudes and more coherence than those seen in higher resolution simulations. Higher angular resolution allows non-axisymmetric structures to grow in higher-order azimuthal $m$-values, as demonstrated by a Fourier decomposition of the density. The strengths of these components are given by their global Fourier amplitudes,
@@ -293,7 +293,7 @@ b_m &=\int \rho \sin(m\phi)\varpi {\rm d}\varpi {\rm d}z {\rm d}\phi.
 \end{align}
 \end{subequations}
 Here  $\rho_o$ is the axisymmetric component of the density. In what follows, $A_m$ is averaged over time to suppress fluctuations on the dynamic timescale due to the chaotic nature of GIs in the asymptotic  phase.
-In particular, $\langle A_{tot} \rangle$ will represent the power over the radial range 10 -- 40 AU, summed from $ m = 2$ to $l_{max}/2$ and averaged over the time range 12 -- 18 ORPs. The Fourier amplitudes cannot be measured at resolutions smaller than $l_{max}/2$, therefore $A_m$ is limited to modes $m \le l_{max}/2$.  
+In particular, $\langle A_{tot} \rangle$ will represent the power over the radial range 10 -- 40 AU, summed from $ m = 2$ to $l_{max}/2$ and averaged over the time range 12 -- 18 ORP. The Fourier amplitudes cannot be measured at resolutions smaller than $l_{max}/2$, therefore $A_m$ is limited to modes $m \le l_{max}/2$.  
 Because the central star is artificially fixed to the grid center, the $m=1$ mode may not
 be accurately treated. For this reason, it is excluded from $\langle A_{tot} \rangle$.  As discussed below in \S3.2,
 we expect this exclusion to have minimal impact on the results of this work.
@@ -432,14 +432,14 @@ The gravitational stresses of equation \eqref{alpha1} can be evaluated using the
                                 & = - \frac{1}{2\pi\varpi^2} \int \rho\frac{\partial\Phi}{\partial\phi} {\rm d}V.
 \end{split}
 \end{equation}
-Figure \ref{fig:alpha_v_radius} shows $\alpha_{\rm{eff}}$, time-averaged from 12 to 18 ORPs, calculated using equations \eqref{alpha1} and \eqref{newtonstress},
+Figure \ref{fig:alpha_v_radius} shows $\alpha_{\rm{eff}}$, time-averaged from 12 to 18 ORP, calculated using equations \eqref{alpha1} and \eqref{newtonstress},
 for the four grid resolutions.  For comparison, 
 $\alpha_{\rm{eff}}$ predicted by equation \eqref{eq:gammie} from \citet{gammie2001} are plotted for disks.  The lower  Gammie curve applies for the strongly self-gravitating limit while the upper curve 
 represents the non-self-gravitating limit.   The $l_{max} = 512$ curve is consistent with these two limits.  However, 
 the  $l_{max} = 512$ curve does not represent a converged model.
 To determine whether the converged value of $\alpha_{\rm{eff}}$ is consistent with predictions, we examine 
 the spatially (10 -- 40 AU) and temporally (12 -- 18 ORP) averaged  $\alpha_{avg}$,
-provided in table 1, for each value of  $l_{max}$.    A Richardson extrapolation applied to these values  
+provided in table 1, for each value of  $l_{max}$. A Richardson extrapolation applied to these values  
 converges to $\alpha_{avg} = 0.017$ (over the same radial  and time range)
 as the grid spacing goes to zero.   This falls
 between the $\alpha_{avg}$ values for the Gammie curves 0.014 (strongly self-gravitating) and 0.027 (non-self-gravitating).
@@ -488,6 +488,9 @@ for $\alpha_{avg}$ of 0.020. This overestimates the extrapolated converged value
 power in the high-order ($m = 2$ -- 7) modes by essentially the same percentage. However, it should be noted that the fractional difference between successive doubling of the resolution has decreased for $l_{max} = 512$. From $l_{max} =64$ to 128 the fractional difference in $\alpha_{avg}$ is 36\%. This decreases to 26\% for the jump from $l_{max} = 256$ to 512. Furthermore, the converged value represents infinite azimuthal resolution, which is, of course, impossible to achieve in a fixed grid scheme. 
 %It is unclear as to what variation of $\alpha$ between two values of $l_{max}$ would represent convergence as $\alpha$ 
 %itself is a dynamically varying quantity, see figure \ref{fig:alphavar}. 
+In addition to the convergence of $\alpha_{avg}$, table \ref{tbl:ams} shows the convergence of the $\dot{M}$
+from 10 -- 40 AU averaged from 12 to 18 ORP. The $\dot{M}_{avg}$ measurement shows convergence similar to that
+of the $\alpha_{avg}$ measurement.
 
 Another consideration is the effect of $r$ and $z$ resolutions on the outcome of the simulation. In this study we have chosen to focus on azimuthal resolution because it has the greatest effect on resolving the non-axisymmetric
 structures responsible for producing the gravitational stresses. However, as one increases the azimuthal resolution, the radius at which the cells have roughly equal sides increases as well. Ideally, this should occur near the radial range where GIs are most active. For $l_{max} = 512$, $\delta r = r \delta \phi $ at $\approx 13.5$ AU, which is near the radius where GIs are active.
@@ -632,18 +635,19 @@ University.
 
 \begin{table}
 \begin{center}
-\begin{tabular}{ccccc}
+\begin{tabular}{cccccc}
 \multicolumn{5}{c}{$Q$, Fourier Amplitudes, and $\alpha$}\\ \hline\hline
-$l_{max}$ & $Q_{avg}$   & $\langle A_{tot} \rangle$   & $\langle A_{2-7} \rangle / \langle A_{tot} \rangle$ & $\alpha_{avg}$ \\\hline
-64   & 1.26 & 1.96 &  0.76 & 0.069 \\
-128 & 1.24 & 1.91 &  0.62 & 0.044 \\
-256 & 1.39 & 1.83 &  0.54 & 0.026 \\
-512 & 1.48 & 1.95 &  0.49 & 0.020 \\ 
-$\infty$ & & &0.43 & 0.017 \\ \hline
+$l_{max}$ & $Q_{avg}$   & $\langle A_{tot} \rangle$   & $\langle A_{2-7} \rangle / \langle A_{tot} \rangle$ &
+$\alpha_{avg}$ & $\dot{M}_{avg} ~\mathrm{M_\odot/yr}$\\\hline
+64   & 1.26 & 1.96 &  0.76 & 0.069 & 8.9$ \times 10^{-7}$ \\
+128 & 1.24 & 1.91 &  0.62 & 0.044 & 3.7$ \times 10^{-7}$ \\
+256 & 1.39 & 1.83 &  0.54 & 0.026 & 2.5$ \times 10^{-7}$ \\
+512 & 1.48 & 1.95 &  0.49 & 0.020 & 2.4$ \times 10^{-7}$ \\ 
+$\infty$ & & &0.43 & 0.017 & \\ \hline
 \label{tbl:ams}
 \end{tabular}
 \caption{ All quantities are time-averaged over 12 -- 18 ORP.
-$Q_{avg}$ and $\alpha_{avg}$ are also spatially
+$Q_{avg}$, $\alpha_{avg}$, and $\dot{M}_{avg}$  are also spatially
 averaged over 10 -- 40 AU.  The entries for ``$\infty$'' are based on Richardson extrapolation,
 as explained in the text.}  
 \end{center}
@@ -681,7 +685,7 @@ as explained in the text.}
 
 \begin{figure}
 \plotone{Figure1.eps}
-\caption{Azimuthally averaged mid-plane Toomre Q distribution versus radius for each of the four resolutions at t $\sim$ 18 ORPs}
+\caption{Azimuthally averaged mid-plane Toomre Q distribution versus radius for each of the four resolutions at t $\sim$ 18 ORP}
 \label{fig:Final_Q}
 \end{figure}
 
@@ -689,7 +693,7 @@ as explained in the text.}
 \plotone{Figure2.eps}
 \caption
 {
-Mid-plane disk densities at $t \sim 18$ ORPs for simulations with 64, 128, 256 and 512 azimuthal grid elements.
+Mid-plane disk densities at $t \sim 18$ ORP for simulations with 64, 128, 256 and 512 azimuthal grid elements.
 The simulations differ only in the number of  azimuthal zones used in the calculations.  Densities out of the plane, along an azimuthal cut through the disk, are displayed below the face-on views.  The color scale is logarithmic, and axis units are AU. 
 }
 \label{fig:DensityPlots}
@@ -741,7 +745,7 @@ components for all azimuthal resolutions.  While a higher fraction of the total 
 \plotone{Figure6.eps}
 \caption
 {Effective $\alpha$'s for the $t_{cool} =$ 2 ORP, $\gamma = 5/3$, $\Sigma \sim r^{ -1}$ disk, averaged between 12 and 18
-  ORPs, for four different azimuthal grid resolutions, given by the number of azimuthal grid-points $l_{max}$. The
+  ORP, for four different azimuthal grid resolutions, given by the number of azimuthal grid-points $l_{max}$. The
   dashed lines show the $\alpha$ from equation (\ref{eq:gammie}) (upper: strongly self-gravitating limit, lower:
   non-self-gravitating limit), while the dotted line at $\log(\alpha) = -1.22$ represents the maximum stress a disk can
   maintain without fragmenting according to \citet{rice2005}. 

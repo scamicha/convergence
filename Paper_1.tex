@@ -1,4 +1,4 @@
-\documentclass[manuscript]{aastex} 
+﻿\documentclass[manuscript]{aastex} 
 
 \newcommand{\ie}{{\it i.e.}}
 \newcommand{\cf}{{\it cf.}}
@@ -481,16 +481,28 @@ when averaged over a substantial volume of the disk.
 
 \subsection{Convergence and $l_{max}$}
 
-The results above permit an assessment of appropriate azimuthal grids for the
-problem under consideration and similar problems. The $l_{max} = 512$ simulation yields a value 
-for $\alpha_{avg}$ of 0.020. This overestimates the extrapolated converged value of $\alpha_{avg}
-= 0.017$ by $\sim 18$\%. The $l_{max} = 512$ simulation also overestimates the fractional
-power in the high-order ($m = 2$ -- 7) modes by essentially the same percentage. However, it should be noted that the fractional difference between successive doubling of the resolution has decreased for $l_{max} = 512$. From $l_{max} =64$ to 128 the fractional difference in $\alpha_{avg}$ is 36\%. This decreases to 26\% for the jump from $l_{max} = 256$ to 512. Furthermore, the converged value represents infinite azimuthal resolution, which is, of course, impossible to achieve in a fixed grid scheme. 
+The results above permit an assessment of appropriate azimuthal grids for the problem under consideration and
+similar problems. The $l_{max} = 512$ simulation yields a value for $\alpha_{avg}$ of 0.020. This
+overestimates the extrapolated converged value of $\alpha_{avg} = 0.017$ by $\sim 18$\%. The $l_{max} = 512$
+simulation also overestimates the fractional power in the high-order ($m = 2$ -- 7) modes by essentially the
+same percentage. However, it should be noted that the fractional difference between successive doubling of the
+resolution has decreased for $l_{max} = 512$. From $l_{max} =64$ to 128 the fractional difference in
+$\alpha_{avg}$ is 36\%. This decreases to 26\% for the jump from $l_{max} = 256$ to 512. Furthermore, the
+converged value represents infinite azimuthal resolution, which is, of course, impossible to achieve in a
+fixed grid scheme.
 %It is unclear as to what variation of $\alpha$ between two values of $l_{max}$ would represent convergence as $\alpha$ 
 %itself is a dynamically varying quantity, see figure \ref{fig:alphavar}. 
-In addition to the convergence of $\alpha_{avg}$, table \ref{tbl:ams} shows the convergence of the $\dot{M}$
-from 10 -- 40 AU averaged from 12 to 18 ORP. The $\dot{M}_{avg}$ measurement shows convergence similar to that
-of the $\alpha_{avg}$ measurement.
+
+%DICK: I made changes here.
+In addition to the convergence of $\alpha_{avg}$, table 1 illustrates the convergence of the measured net
+inward mass transport rates $\dot{M}$ over the time interval 12 -- 18 ORP. We tabulate the value of
+$|\dot{M}|$ spatially averaged over 10 -- 40 AU. The absolute value of the net $\dot{M}$ at each $r$ is taken
+prior to the spatial average because $\dot{M}$ varies in sign with $r$. It is the magnitude of the typical net
+mass transport rates that we wish to compare. The $|\dot{M}|_{avg}$ measurements show convergence similar to
+that of the $\alpha_{avg}$ measurement based on the gravitational torques. This gives us confidence that no
+important contributions from Reynolds stresses are being overlooked. Moreover, we have used eq. (22) of
+\citet{boley2006} to estimate mass inflow rates based on the measured gravitational torques and find that
+these torques are indeed sufficient to account for the measured $\dot{M}$.
 
 Another consideration is the effect of $r$ and $z$ resolutions on the outcome of the simulation. In this study we have chosen to focus on azimuthal resolution because it has the greatest effect on resolving the non-axisymmetric
 structures responsible for producing the gravitational stresses. However, as one increases the azimuthal resolution, the radius at which the cells have roughly equal sides increases as well. Ideally, this should occur near the radial range where GIs are most active. For $l_{max} = 512$, $\delta r = r \delta \phi $ at $\approx 13.5$ AU, which is near the radius where GIs are active.
@@ -632,13 +644,13 @@ University.
 
 \newpage
 
-
+%DICK: I made changes here.
 \begin{table}
 \begin{center}
 \begin{tabular}{cccccc}
-\multicolumn{5}{c}{$Q$, Fourier Amplitudes, and $\alpha$}\\ \hline\hline
+\multicolumn{5}{c}{$Q$, Fourier Amplitudes, $\alpha$, and $\dot{M}$}\\ \hline\hline
 $l_{max}$ & $Q_{avg}$   & $\langle A_{tot} \rangle$   & $\langle A_{2-7} \rangle / \langle A_{tot} \rangle$ &
-$\alpha_{avg}$ & $\dot{M}_{avg} ~\mathrm{M_\odot/yr}$\\\hline
+$\alpha_{avg}$ & $|\dot{M}|_{avg} ~\mathrm{M_\odot/yr}$\\\hline
 64   & 1.26 & 1.96 &  0.76 & 0.069 & 8.9$ \times 10^{-7}$ \\
 128 & 1.24 & 1.91 &  0.62 & 0.044 & 3.7$ \times 10^{-7}$ \\
 256 & 1.39 & 1.83 &  0.54 & 0.026 & 2.5$ \times 10^{-7}$ \\
@@ -647,7 +659,7 @@ $\infty$ & & &0.43 & 0.017 & \\ \hline
 \label{tbl:ams}
 \end{tabular}
 \caption{ All quantities are time-averaged over 12 -- 18 ORP.
-$Q_{avg}$, $\alpha_{avg}$, and $\dot{M}_{avg}$  are also spatially
+$Q_{avg}$, $\alpha_{avg}$, and $|\dot{M}|_{avg}$  are also spatially
 averaged over 10 -- 40 AU.  The entries for ``$\infty$'' are based on Richardson extrapolation,
 as explained in the text.}  
 \end{center}

@@ -1,4 +1,4 @@
-This is the response to the first referee report for ApJ submission MS#ApJ83382
+﻿This is the response to the first referee report for ApJ submission MS#ApJ83382.
 
 My primary concern with the analysis is the neglect of the Reynolds stress component when calculating the
 effective \alpha viscosity. The authors show that as the disk resolution is increased, more power is
@@ -8,7 +8,7 @@ and thus a higher effective \alpha.
 
 * It should be noted that the measurement presented in Table 1 and Figure 3 of the manuscript are those of the
 Fourier amplitudes, as defined in eqns 2 and 3. As can be seen by their definition, these values do not
-directly measure the power in a given eignmode. In addtion, each particular m value makes a relatively minor
+directly measure the power in a given eignmode. In addition, each particular m value makes a relatively minor
 contribution for large m (i.e. m > 20). The measurement of A_m also includes no phase information, so A_m is
 not necessarily a good indicator of coherent density structures or organized velocity correlations.
 
@@ -20,34 +20,34 @@ this latter term were included.
 * The difficulty arises from the fact that the Reynolds stress is typically defined as R_ij = rho*u'_i*u'_j
   where u'_i and u'_j are the fluctuations in the velocity field. The fluctuating pieces of the velocity field
   are defined as u'_i = u_i - u<avg>_i, but in a gravitationally unstable disk with extended non-axisymmetric
-  spiral structures, the proper definition of u<avg> (particularly in the phi direction) is unclear. We measured the
-  Reynolds stresses using several different definitions for u<avg> and obtained results that varied
-  dramatically (by an order of magnitude in some cases). The cases we tried were, using an azimuthal average
-  for u<avg>_phi and 0 for u<avg>_r, using an average +/- 2 cells in the direction of interest, using an
-  equiangular average in the direction of interest (i.e. the number of cells used in the average for the phi
-  direction increased with resolution), using a +/- 2 cell patch around the cell, and using an equiangular
-  patch. As stated earlier, results for each of these cases varied substantially. It is also not clear what is
-  the proper scale to average over, as one would like to measure the Reynolds stress caused by turbulent
-  motion, not the ordered motion of spiral arms. In fact, when the Reynolds stress is measured by using a +/-
-  2 cell patch in both directions, the stresses measured are a few percent of the gravitational torques. (See
-  attached figures.) response_to_referee1_fig1a.eps shows the measured torques from the Reynolds stress from
-  10 to 50 AU averaged from 12 to 18 ORP for  LMAX = 64(black), 128(blue), 256(green), and 512(red), while
-  response_to_referee1_fig1b.eps shows the measured gravitational torques averaged over the same time period. 
+  spiral structures, the proper definition of u<avg> (particularly in the phi direction) is unclear. We
+  measured the Reynolds stresses using several different definitions for u<avg> and obtained results that
+  varied dramatically (by an order of magnitude in some cases). The cases we tried were: using an azimuthal
+  average for u<avg>_phi and 0 for u<avg>_r, using an average +/- 2 cells in the direction of interest, using
+  an equiangular average in the direction of interest (i.e. the number of cells used in the average for the
+  phi direction increased with resolution), using a +/- 2 cell patch around the cell, and using an equiangular
+  r,phi patch. As stated earlier, results for each of these cases varied substantially. It is also not clear
+  what is the proper scale to average over, as one would like to measure the Reynolds stress caused by
+  turbulent motion, not the ordered motion of spiral arms. In fact, when the Reynolds stress is measured by
+  using a +/- 2 cell patch in both directions, the stresses measured are only a few percent of the
+  gravitational torques.  (See attached figures.) response_to_referee1_fig1a.eps shows the measured torques
+  from the Reynolds stress from 10 to 50 AU averaged from 12 to 18 ORP for LMAX = 64(black), 128(blue),
+  256(green), and 512(red), while response_to_referee1_fig1b.eps shows the measured gravitational torques
+  averaged over the same time period.
 
 In addition to measuring the Reynolds stresses directly, the authors could also look at the mass accretion
 rate through rings in order to quantify the effective \alpha. The latter would be another way to get at the
 contribution from Reynolds stresses.
 
-* We were able to make this measurement and the mass accretion shows a similar trend to the gravitational
-  torque. In addition we calculated the predicted mass accretion based on the measured torques (see Boley et
-  al. 2006 equation 22). These are roughly in line with the measured mass accretion rates. Overall the average
-  from 12 to 18 ORP of the absolute value of the measured rates follows the same trend as the torques. For
-  LMAX = 64 the average of the absolute value of the rate was 8.9 x 10^-7 m_sun/yr, for LMAX = 128 the average
-  of the absolute value of the rate was 3.7 x 10^-7 m_sun/yr, for LMAX = 256 the average of the absolute value
-  of the rate was  2.5 x 10^-7 m_sun/yr, and for LMAX = 512 the average of the absolute value of the rate was
-  2.4 x 10^-7 m_sun/yr. (See attached figure.) In response_to_referee1_fig2.eps the solid lines show the
-  predicted mdots (x10^-6 m_sun/yr) vs. radius (AU) from the measured gravitational torques, while the dashed
-  lines show the actual measured mass accretion rates from 12 to 18 ORP. The color scale is the same as in fig1.
+* We were able to make this measurement and the mass accretion shows convergence similar to the gravitational
+  torques. In addition we calculated an expected mass accretion based on the measured torques (see Boley et
+  al. 2006 equation 22), and the gravitational torques alone are sufficient to account for the measured
+  accretion rates. For LMAX = 64 the average over 10 to 40 AU of the absolute value of the measured radial
+  mass flow rate was 8.9 x 10^-7 m_sun/yr; for LMAX = 128 it was 3.7 x 10^-7 m_sun/yr, for LMAX = 256 2.5 x
+  10^-7 m_sun/yr, and for LMAX = 512 2.4 x 10^-7 m_sun/yr. The mass inflow rates are thus converging in a
+  manner similar to the alpha measured from the gravitational torques alone. There is no indication of missing
+  contributions to alpha from Reynolds stresses. This information is now included in Table 1 and in the text
+  in Section 3.4.
 
 The authors could also measure the net heating in their simulation to quantify the effective \alpha via
 dissipation. This would give again more insight into the effect of resolution on the critical cooling time or
@@ -56,6 +56,12 @@ not fragmenting, a lower effective \alpha should imply less heating, and thus in
 time. Of course, if \alpha is more and more dominated by Reynolds terms, than the heating rate and effective
 alpha might not decline. This is a very important distinction. The comment in the summary that Q is increasing
 with increasing resolution suggests that there is more heating, and thus more dissipation.
+
+* Our code conserves angular momentum with more precision than it conserves energy, and so we have more
+  confidence about changes in the radial position of mass elements due to changes in their specific angular
+  momentum than in measurements of energy dissipation rates. The similar convergence of the measured 
+  mass accretion rates and the gravitational alpha give us confidence that gravitational torques 
+  dominate the mass transport.
 
 All of my other concerns are minor, and listed in page order below:
 
@@ -72,17 +78,17 @@ More explanation would be useful to improve the readability for non-experts
 pg 5: Sunyaev is misspelled, and a citation should be given to Pringle 81 for the cited \alpha formalism (SS73
 is magnetic, and with a slightly different scaling)
 
-* Spelling fixed, and Pringle cited
+* Spelling fixed, and Pringle cited.
 
 pg 6: A citation to Rice & Lodato 04-05 should be included as they tested the locality of transport and
 dissipation.
 
-*Citation included
+* Citation included.
 
 pg 6: A citation to Kratter et al 2010, Walsh et al 2010 would also be appropriate for models of embedded GI
 unstable accretion disks.
 
-*Kratter citation included, however we were unable to locate the Walsh paper referenced here.
+* Kratter citation included, however we were unable to locate the Walsh paper referenced here.
 
 pg 7: I don't understand the emphasis on local vs "global" cooling time. I can see that a global cooling time
 will make the entire disk go unstable at the same time (inner radii get to Q=1 faster), but it is no more
@@ -90,38 +96,38 @@ physical than the "local" choice, which allows for a cancellation in the energy 
 dimensionless criterion. The authors should provide some explanation of this issue, or of their choice. Of
 course the difference between these two is irrelevant for Gammie's simulation.
 
-*First paragraph on page 7 rewritten to attempt to elucidate this issue.
+* First paragraph on page 7 is rewritten to elucidate this issue.
 
 pg 8: Purely stylistic, but the phrase "the balance of this paper" see odd to me (rather than "the remainder
 of this paper")
 
-*Changed
+* Changed.
 
 pg 8: "alpha" should be a letter
 
-*Changed
+* Changed.
 
 pg 9: "Source and flux terms..." The authors should explain what these are physically.
 
-*Citations included which explain this in detail.
+* Citations are now included where this is explained in detail.
 
 pg 9: What does is mean that the surface density approximates 1/r?
 
-*Wording changed to be more clear.
+* Wording changed to be more clear.
 
 pg 9: The authors use \gamma  = 5/3 for a protostellar disk, which should be \gamma=7/5. It would be useful to
 note this as the critical cooling boundary is a function of \gamma.
 
-*Discussion and citations to Boley et al. 2007, who cover this issue in great detail are now included. In fact,
-it is not clear what the correct physical choice is for molecular hydrogen when using a fixed \gamma.
+* Discussion and citations to Boley et al. 2007, who cover this issue in great detail are now included. In fact,
+  it is not clear what the correct physical choice is for molecular hydrogen when using a fixed \gamma.
 
 pg 13: A footnote explaining Richardson extrapolation might be useful
 
-*Citation to Numerical Recipes included.
+* Citation to Numerical Recipes included.
 
 pg 14: "only the last 14 orbit" -> orbits
 
-*Changed
+* Changed.
 
 pg 15: Note that the effectiveness of the m=1 mode depends on the disk to star mass ratio. (cite Adams et al
 1989)
@@ -135,18 +141,18 @@ pg 16: The note that Gammie found that Reynolds stresses were important, might a
 pg 20: It is not quite accurate to equate inefficient cooling with a stiff equation of state in the context of
 these simulations. One can set the cooling time to be quite short, and \gamma to be quite stiff.
 
-*What is written in the manuscript is correct. The key word is "effective." A short cooling time for a truly
- stiff cp/cv=gamma makes the effective gamma nonstiff.  The classic example is an isothermal gas.  We avoid
- possible confusion on this issue by not addressing this additional complexity.
+* What is written in the manuscript is correct. The key word is "effective." A short cooling time for a truly
+  stiff cp/cv=gamma makes the effective gamma nonstiff.  The classic example is an isothermal gas.  We avoid
+  possible confusion on this issue by not addressing this additional complexity.
 
 pg 20: "militate against" Do you mean mitigate?
 
-*No
+* No, "militate" is the intended meaning.
 
 pg 20:  It might be useful to include a footnote saying that you are using orbital periods instead of \Omega
 to quote the critical values for the cooling time.
 
-*Text modified as follows: "half the local orbital period (tcool~3/Omega)."
+* Text modified as follows: "half the local orbital period (tcool~3/Omega)."
 
 pg 21: The sentence starting "For example, the Gammie 2001 simulations..." is confusingly written. Also, I
 disagree with the description of the Meru and Bate results adding "weight to the claims by e.g. Boss..". It
@@ -154,9 +160,9 @@ seems clear that unless dissipation is dramatically non-local, there must be a r
 dissipation and cooling. I don't think Boss is claiming that this doesn't exist, just that cooling isn't a
 problem.
 
-*Modified as follows: "For example, the Gammie (2001) simulations have revealed the most stringent cooling
-criterion of all the tcool-fragmentation studies, and due to the local approximation Gammie used, the
-simulations are also at very high resolution."
+* Modified as follows: "For example, the Gammie (2001) simulations have revealed the most stringent cooling
+  criterion of all the tcool-fragmentation studies, and due to the local approximation Gammie used, the
+  simulations are also at very high resolution."
 
 Figures:
 
@@ -165,18 +171,18 @@ eventually sized in publication, I can imagine some of them being hard to read.
 
 fig 3 caption: "these quantities are roughly..." I don't know what this refers to
 
-*Rewritten for clarity.
+* Rewritten for clarity.
 
 fig 5: While I appreciate the black and white legibility of this diagram, color might be useful for online
 readers (or those who print in color) to distinguish between the various curves
 
-*Both color and B/W versions of the figures have been provided.
+* Both color and B/W versions of the figures have been provided.
 
 fig 6: "different different". The flat line looks dotted to me (not dashed). I also think it is misleading to
 describe Gammie's as a prediction, and Rice et al 2005 as more of a "fact"
 
-*This has been corrected
+* This has been corrected.
 
 fig 7: "alpha" should be the letter. I find the caption description of the dotted lines confusing.
 
-*This has been corrected
+* This has been corrected.

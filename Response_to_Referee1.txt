@@ -1,4 +1,4 @@
-﻿This is the response to the first referee report for ApJ submission MS#ApJ83382.
+This is the response to the first referee report for ApJ submission MS#ApJ83382.
 
 My primary concern with the analysis is the neglect of the Reynolds stress component when calculating the
 effective \alpha viscosity. The authors show that as the disk resolution is increased, more power is

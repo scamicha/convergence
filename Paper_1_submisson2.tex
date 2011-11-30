@@ -1,4 +1,4 @@
-\documentclass[manuscript]{aastex}
+\documentclass[manuscript]{aastex} 
 
 \newcommand{\ie}{{\it i.e.}}
 \newcommand{\cf}{{\it cf.}}
@@ -31,10 +31,12 @@
 
 \citestyle{aa}
 
+% \slugcomment{Not to appear in Nonlearned J., 45.}
 
 \shorttitle{Effective Disk Alphas}
 \shortauthors{Michael et al.}
 
+%
 \begin{document}
 
 
@@ -80,8 +82,8 @@ lower-order structures. Therefore, as the resolution increases the total
 gravitational stress decreases as well, leading higher-resolution simulations to experience
 weaker average gravitational torques than lower-resolution simulations. The 
 effective $\alpha$ also depends upon the magnitude of the stresses, thus
-$\alpha_{\rm eff}$ also decreases with increasing resolution. Our converged
-$\alpha_{\rm eff}$ is consistent with predictions from
+$\alpha_{eff}$ also decreases with increasing resolution. Our converged
+$\alpha_{eff}$ is consistent with predictions from
 an analytic local theory for thin disks by Gammie (2001), but only over many
 dynamic times when averaged over a substantial volume of the disk.
 
@@ -156,7 +158,7 @@ framework.  However, the  validity of an $\alpha$-disk picture requires self-con
 The locality of dissipation in GI-active disks has not been thoroughly tested and remains an open question \citep{lodato2004,lodato2005,boley2006}. 
 
 In fact, several studies support the idea that angular momentum transport by GIs in real disks is, in many important respects, an intrinsically global phenomenon and cannot be properly treated by a local $\alpha$-like prescription \citep{laughlin1996, balbus1999, lodato2005, mejia2005, boley2006, cai2008}.  This almost certainly applies to the embedded phase of both high and low-mass stars when infall from the collapsing protostellar cloud feeds mass into the disk at a rapid
-rate \citep[e.g.,][]{yorke1993, laughlin1994, yorke1999,vorobyov2005,vorobyov2006,kratter2010,walch2010}.  
+rate \citep[e.g.,][]{yorke1993, laughlin1994, yorke1999,vorobyov2005,vorobyov2006,kratter2010}.  
 However, despite the long-distance nature of gravitational torques, theoretical and numerical results suggest that in protostellar disks where heating and cooling are in rough balance, 
  it may be valid to represent GI-induced transport by an {\it effective viscosity}, as if it were a local process \citep{gammie2001, lodato2004, rice2005, cossins2009, vorobyov2010}.  In particular, multiple studies suggest that
 an effective $\alpha$-viscosity may be consistent
@@ -164,19 +166,19 @@ with transport in GI-active disks for a disk to star mass ratio $M_d/M_* \le 0.2
 in systems with larger $M_d/M_*$ are dominated by lower-order modes that act in a more global sense and thus cannot be well represented by an $\alpha$-approach
 \citep{lodato2004, cossins2009, vorobyov2010}. 
 We note, however, that the these studies all assumed
-a {\it local cooling time}, $t_{\rm cool}\Omega =$ constant, 
-where $t_{\rm cool}$ is defined by the rate at which cooling decreases the disk's internal energy density
-$\epsilon$ by $d\epsilon/dt = \epsilon / t_{\rm cool}$.  In contrast, we and our collaborators use either a {\it global cooling time},
-$t_{\rm cool} = $ constant \citep[e.g.,][this paper]{pickett2003, mejia2005}, or use realistic opacities \citep[e.g.,][]{mejiaphd2004, cai2006, cai2008, boley2006, boley2007b,  boley2009} which lead to something in between $t_{\rm cool} = $ constant  and
-$t_{\rm cool}\Omega =$ constant. The review by \citet{durisen2007} discusses some consequences of these various
-choices. There is a tendency for $t_{\rm cool}\Omega =$ constant to bias a disk toward behavior like that of a
+a {\it local cooling time}, $t_{cool}\Omega =$ constant, 
+where $t_{cool}$ is defined by the rate at which cooling decreases the disk's internal energy density
+$\epsilon$ by $d\epsilon/dt = \epsilon / t_{cool}$.  In contrast, we and our collaborators use either a {\it global cooling time},
+$t_{cool} = $ constant \citep[e.g.,][this paper]{pickett2003, mejia2005}, or use realistic opacities \citep[e.g.,][]{mejiaphd2004, cai2006, cai2008, boley2006, boley2007b,  boley2009} which lead to something in between $t_{cool} = $ constant  and
+$t_{cool}\Omega =$ constant. The review by \citet{durisen2007} discusses some consequences of these various
+choices. There is a tendency for $t_{cool}\Omega =$ constant to bias a disk toward behavior like that of a
 steady-state $\alpha$-disk.
 
 \citet{gammie2001} derived an effective $\alpha$ for the case of a thin gravitationally unstable disk where the heating
 caused by GIs was balanced by the local cooling rate \citep[see also][]{pringle1981}.  
-Assuming a local cooling time of $t_{\rm cool}\Omega =$ constant,  Gammie found
+Assuming a local cooling time of $t_{cool}\Omega =$ constant,  Gammie found
 \begin{equation}
-\alpha_{\rm{eff}} = [\gamma(\gamma - 1) \slantfrac{9}{4}\Omega t_{\rm cool}]^{-1},
+\alpha_{\rm{eff}} = [\gamma(\gamma - 1) \slantfrac{9}{4}\Omega t_{cool}]^{-1},
 \label{eq:gammie}
 \end{equation}
 where $\gamma$ is the two-dimensional adiabatic index. 
@@ -188,7 +190,7 @@ disk and
 $\gamma = 3 - 2/\Gamma $
 for a strongly self gravitating disk.   \cite{lodato2004} derived a similar result when considering three-dimensional protoplanetary disks.
 Fully 3D simulations \citep[e.g.,][]{lodato2004, cossins2009} suggest that, at least in the case of imposed 
-$t_{\rm cool}\Omega = $ constant cooling, $\alpha_{\rm{eff}}$ roughly converges to the value given by equation (\ref{eq:gammie}). 
+$t_{cool}\Omega = $ constant cooling, $\alpha_{\rm{\rm{eff}}}$ roughly converges to the value given by equation (\ref{eq:gammie}). 
 
 In what follows, we address these and related questions using a grid-based, finite-difference 3D hydrodynamics code with 
 self-gravity to follow the evolution of a protostellar disk with a constant cooling time and subject to GIs.
@@ -245,7 +247,7 @@ outer radii of 2.3 and 40 AU, respectively. The construction of these initial eq
  We assume an equation of state $P = (\gamma -1)\epsilon$, where $P$ is the pressure, $\epsilon$ is the internal energy
  density, and $\gamma$ is the ratio of specific heats, given here by $\gamma = 5/3$. As discussed in \citet{boley2007a},
  the rotation states of $H_2$ are probably not excited in the cold outer parts of the disk ($> 10$ AU); so $\gamma =
- 5/3$ is an appropriate choice. The model disks are cooled by decreasing their internal energy according to the prescription $d\epsilon/dt = \epsilon / t_{\rm cool}$, where $t_{\rm cool}$ is the global cooling time, which is set to 2 ORP everywhere. 
+ 5/3$ is an appropriate choice. The model disks are cooled by decreasing their internal energy according to the prescription $d\epsilon/dt = \epsilon / t_{cool}$, where $t_{cool}$ is the global cooling time, which is set to 2 ORP everywhere. 
  
 The initially unstable disk model passed through several phases of evolution \citep[see also][]{pickett2003, mejia2005}.  
 During the initial axisymmetric phase, 
@@ -263,7 +265,7 @@ run through $\sim 18$ ORP.
 
 Figure \ref{fig:Final_Q} shows the Toomre $Q$, as a function of radius, for all four simulations at $t \sim$ 18 ORP.  
 %Table \ref{tbl:ams} 
-Table 1 lists $Q_{\rm avg}$, the arithmetic mean of $Q$ for each of the asymptotic disks, time-averaged from 12 -- 18 ORP and spatially averaged over 10 -- 40 AU.  From $\sim$ 12 -- 50 AU, $Q \sim 1.0$ -- 1.4 and thus the disk is subject to GIs over this full range.  
+Table 1 lists $Q_{avg}$, the arithmetic mean of $Q$ for each of the asymptotic disks, time-averaged from 12 -- 18 ORP and spatially averaged over 10 -- 40 AU.  From $\sim$ 12 -- 50 AU, $Q \sim 1.0$ -- 1.4 and thus the disk is subject to GIs over this full range.  
 
 %%%%%%%%%%%% RESULTS & DISCUSSION %%%%%%%%%%%%%%%%
 
@@ -397,9 +399,9 @@ and $c_s$ the sound speed. In comparison to \citeauthor{gammie2001}'s 2D models,
  
 %Gammie found
 %\begin{equation}
-%\alpha_{\rm{eff}} = [\gamma(\gamma - 1) \slantfrac{9}{4}\Omega t_{\rm cool}]^{-1}
+%\alpha_{\rm{eff}} = [\gamma(\gamma - 1) \slantfrac{9}{4}\Omega t_{cool}]^{-1}
 %\end{equation}
-%where $\gamma$ is the two dimensional adiabatic index and $t_{\rm cool}$ is a cooling parameter. 
+%where $\gamma$ is the two dimensional adiabatic index and $t_{cool}$ is a cooling parameter. 
 %The two dimensional index relates
 %to the three dimensional index, $\Gamma$, by 
 %$\gamma = (3\Gamma - 1) / (\Gamma + 1)$
@@ -436,11 +438,11 @@ $\alpha_{\rm{eff}}$ predicted by equation \eqref{eq:gammie} from \citet{gammie20
 represents the non-self-gravitating limit.   The $l_{max} = 512$ curve is consistent with these two limits.  However, 
 the  $l_{max} = 512$ curve does not represent a converged model.
 To determine whether the converged value of $\alpha_{\rm{eff}}$ is consistent with predictions, we examine 
-the spatially (10 -- 40 AU) and temporally (12 -- 18 ORP) averaged  $\alpha_{\rm avg}$,
+the spatially (10 -- 40 AU) and temporally (12 -- 18 ORP) averaged  $\alpha_{avg}$,
 provided in table 1, for each value of  $l_{max}$. A Richardson extrapolation applied to these values  
-converges to $\alpha_{\rm avg} = 0.017$ (over the same radial  and time range)
+converges to $\alpha_{avg} = 0.017$ (over the same radial  and time range)
 as the grid spacing goes to zero.   This falls
-between the $\alpha_{\rm avg}$ values for the Gammie curves 0.014 (strongly self-gravitating) and 0.027 (non-self-gravitating).
+between the $\alpha_{avg}$ values for the Gammie curves 0.014 (strongly self-gravitating) and 0.027 (non-self-gravitating).
 
 At first glance, these results suggest strong agreement with Gammie and thus strong support for dissipative
 locality and GIs acting as a local mechanism overall.  However, several cautionary notes are in order. It is important to remember that the bulk of the gravitational torque, and therefore the $\alpha_{\rm{eff}}$, is generated by low-order 
@@ -480,24 +482,24 @@ when averaged over a substantial volume of the disk.
 \subsection{Convergence and $l_{max}$}
 
 The results above permit an assessment of appropriate azimuthal grids for the problem under consideration and
-similar problems. The $l_{max} = 512$ simulation yields a value for $\alpha_{\rm avg}$ of 0.020. This
-overestimates the extrapolated converged value of $\alpha_{\rm avg} = 0.017$ by $\sim 18$\%. The $l_{max} = 512$
+similar problems. The $l_{max} = 512$ simulation yields a value for $\alpha_{avg}$ of 0.020. This
+overestimates the extrapolated converged value of $\alpha_{avg} = 0.017$ by $\sim 18$\%. The $l_{max} = 512$
 simulation also overestimates the fractional power in the high-order ($m = 2$ -- 7) modes by essentially the
 same percentage. However, it should be noted that the fractional difference between successive doubling of the
 resolution has decreased for $l_{max} = 512$. From $l_{max} =64$ to 128 the fractional difference in
-$\alpha_{\rm avg}$ is 36\%. This decreases to 26\% for the jump from $l_{max} = 256$ to 512. Furthermore, the
+$\alpha_{avg}$ is 36\%. This decreases to 26\% for the jump from $l_{max} = 256$ to 512. Furthermore, the
 converged value represents infinite azimuthal resolution, which is, of course, impossible to achieve in a
 fixed grid scheme.
 %It is unclear as to what variation of $\alpha$ between two values of $l_{max}$ would represent convergence as $\alpha$ 
 %itself is a dynamically varying quantity, see figure \ref{fig:alphavar}. 
 
 %DICK: I made changes here.
-In addition to the convergence of $\alpha_{\rm avg}$, table 1 illustrates the convergence of the measured net
+In addition to the convergence of $\alpha_{avg}$, table 1 illustrates the convergence of the measured net
 inward mass transport rates $\dot{M}$ over the time interval 12 -- 18 ORP. We tabulate the value of
 $|\dot{M}|$ spatially averaged over 10 -- 40 AU. The absolute value of the net $\dot{M}$ at each $r$ is taken
 prior to the spatial average because $\dot{M}$ varies in sign with $r$. It is the magnitude of the typical net
-mass transport rates that we wish to compare. The $|\dot{M}|_{\rm avg}$ measurements show convergence similar to
-that of the $\alpha_{\rm avg}$ measurement based on the gravitational torques. This gives us confidence that no
+mass transport rates that we wish to compare. The $|\dot{M}|_{avg}$ measurements show convergence similar to
+that of the $\alpha_{avg}$ measurement based on the gravitational torques. This gives us confidence that no
 important contributions from Reynolds stresses are being overlooked. Moreover, we have used eq. (22) of
 \citet{boley2006} to estimate mass inflow rates based on the measured gravitational torques and find that
 these torques are indeed sufficient to account for the measured $\dot{M}$.
@@ -526,7 +528,7 @@ cooling, shocks and mass transport can militate against fragmentation, even in d
 \citep[e.g., ][]{boley2008}. To understand the degree of cooling required to effect clump formation in non-isothermal
 disks, \cite{gammie2001} studied the nonlinear behavior of GIs using a series of shearing sheet simulations.  He showed
 that  a gravitationally unstable disk is likely to fragment whenever the cooling time is less than half the local
-orbital period ($t_{\rm cool}\Omega = 3$).  This work was followed by Rice et al.~(2005), who used global 3D SPH simulations and found that the fragmentation limit was dependent on the adiabatic index.   For disks with $\gamma=5/3$, they found fragmentation 
+orbital period ($t_{cool}\Omega = 3$).  This work was followed by Rice et al.~(2005), who used global 3D SPH simulations and found that the fragmentation limit was dependent on the adiabatic index.   For disks with $\gamma=5/3$, they found fragmentation 
 occurred whenever the local cooling time was less than the local orbital period. For $\gamma=7/5$, the limit was twice the local orbital period.  \cite{rice2005} proposed that this fragmentation threshold was due to a maximum stress that can  be exerted on a disk by gravitational torques.  Using the $\alpha_{\rm{eff}}$ as defined in equation (8), they found that fragmentation could occur whenever $\alpha_{\rm eff}\gtrsim 0.06$ (the dotted line in figure 6).  The difference between the cooling time threshold found by Gammie and the ones found by Rice et al.~are not obviously at odds, as Gammie's study was conducted in 2D and used a 2D adiabatic index of 2.  
 
 Recently, these results have been called into question by \cite{meru2011a}, who suggest that our understanding of the
@@ -537,7 +539,7 @@ Meru \& Bate study uses a prescribed cooling such that $t_{\rm cool}=\beta\Omega
 orbital frequency and $\beta$ is some global constant.  This same cooling prescription was used in the Gammie and Rice
 et al.~studies.  The reason for the differences is unclear, and may not be simply a resolution effect (see Lodato \&
 Clarke 2011, arXiv:1101.2448).  For example, the \cite{gammie2001} have revealed the most stringent cooling criterion of
-all the $t_{\rm cool}$ fragmentation studies, and, due to the local approximation Gammie used, these simulations are also at
+all the $t_{cool}$ fragmentation studies, and, due to the local approximation Gammie used, these simulations are also at
 very high resolution. Moreover, \cite{mejia2005}, who used grid-based simulations with the same code we use here, and  \cite{boley2008}, who used radiative hydrodynamics simulations, also found results that are reasonably consistent with those of Gammie, Rice et al., and \cite{cossins2010}. 
 
 The present convergence study does not address fragmentation directly, but there are several results that should be noted.  First, although the total power in non-axisymmetric structure is roughly constant throughout the simulations, the average $Q$ value increases with increasing resolution (Table 1).  Because both fast cooling and a low $Q$ are necessary
@@ -545,8 +547,7 @@ for fragmentation, this suggests that the disk is becoming less susceptible to c
 
 Some caution must be taken when applying our results generally.  The structure of the disk at the time of the onset of GIs may have a large impact on fragmentation.  For example, \cite{boley2009} found that for disks with the same mass and {\it total} mass accretion rate, the disk with the shallower density profile fragmented, while the other did not \citep[see also ][]{meru2011b}.  The disks explored here evolve to a surface density profile of approximately $p=5/2$ in the outer regions for $\Sigma\propto r^{-p}$, while those explored by \citet{meru2011a} have a shallower profile ($p=1$), favoring fragmentation.  In addition to disk structure, the thermal history of the disk also plays a role in the fragmentation threshold.  \cite{clarke2007}  found that the fragmentation cooling limit is sensitive to the way the instability is approached.  When the cooling time is decreased slowly, the fragmentation limit is pushed toward shorter cooling times than if a fast cooling time is suddenly prescribed.  
 
-Overall, the disks simulated here are converging toward a state of self-regulation as the resolution is
-increased, and do not show signs of becoming more susceptible to fragmentation.
+Overall, the disks simulated here are converging toward a state of self-regulation as the resolution is increased, and do not show signs of becoming more susceptible to fragmentation. 
 
 
 \section{Summary}
@@ -608,20 +609,17 @@ Locally determined values of
 $\alpha_{\rm{eff}}$ vary by factors of 2 or 3 throughout the disk on timescales characteristic
 of the local dynamical time.  Thus the predictions of Gammie are only valid over many dynamic times when averaged over a substantial volume of the disk.
 
-Although not a goal of this work, our simulations can be used to comment on studies of fragmentation and clump
-formation. Previous work indicates that our disk should not fragment due to the long cooling times that we
-use\citep[e.g., ][]{gammie2001, rice2005, mejia2005, boley2008}. However, some recent studies \citep[e.g.,
-][]{boss2009,meru2011a} suggest that previously determined fragmentation criteria too restrictive due to poor
-resolution. We find here that as the resolution is increased, our disk approaches a self-regulating state that
-can be reasonably well-described, in the time- and space-average sense, by an $\alpha$-disk
-parameterization. The average Toomre $Q$ also increases with increasing resolution, suggesting that the disk
-becomes less susceptible to clump formation as the resolution is increased.  This is consistent with our
-simulations not showing a trend toward denser spiral structure with increasing resolution. Moreover, recent
-work by \citet{paardekooper2011} showed that if a high cooling rate is approached slowly, the
-\citet{gammie2001} cooling criterion is recovered for all resolutions considered.  We do note that they find
-non-convergence with resolution when sharp edges in disks are present, but as the authors suggest, this may be
-numerically driven (see also \citet{lodato2011} on numerical convergences issues in regards to fragmentation). Overall, the disks simulated here are converging toward a state of self-regulation as the
-resolution is increased, and do not show signs of becoming more susceptible to fragmentation.
+Although not a goal of this work, our simulations permit
+comments on studies on fragmentation and clump formation.
+Most recent studies indicate that our disk should not fragment \citep[e.g., ][]{gammie2001, rice2005, mejia2005, boley2008}.   However, some recent studies \citep[e.g., ][]{boss2009, meru2011a}
+%Meru & Bate (2011), 
+suggest that fragmentation may be a common result of gravitational instabilities in disks.
+We find that as the resolution increases, our disk approaches a self-regulating state that can be reasonably well-described, in the time- and space-average sense, by an $\alpha$-disk parameterization. 
+The average Toomre $Q$ increases with increasing resolution,
+suggesting that the disk is becoming less susceptible to clump formation with increasing resolution,
+consistent with the observation that
+the disk simulations do not show a trend toward denser spiral structure as the resolution is increased.
+Overall, the disks simulated here are converging toward a state of self-regulation as the resolution is increased, and do not show signs of becoming more susceptible to fragmentation. 
  
 A future paper will address the issues presented in this work using a convergence study of GI-susceptible disks subject to radiative cooling with realistic opacities.  This will allow us to address the generality of the results cited herein.
 
@@ -640,8 +638,259 @@ by Shared University Research grants from IBM, Inc., to the Indiana
 University.
 
 
-\bibliographystyle{apj}
-\bibliography{general}
+\begin{thebibliography}{66}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Balbus} \& {Papaloizou}(1999)}]{balbus1999}
+{Balbus}, S.~A. \& {Papaloizou}, J.~C.~B. 1999, ApJ, 521, 650
+
+\bibitem[{{Boley}(2009)}]{boley2009}
+{Boley}, A.~C. 2009, ApJL, 695, L53
+
+\bibitem[{{Boley} \& {Durisen}(2008)}]{boley2008}
+{Boley}, A.~C. \& {Durisen}, R.~H. 2008, ApJ, 685, 1193
+
+\bibitem[{{Boley} {et~al.}(2007{\natexlab{a}}){Boley}, {Durisen}, {Nordlund},
+  \& {Lord}}]{boley2007b}
+{Boley}, A.~C., {Durisen}, R.~H., {Nordlund}, {\AA}., \& {Lord}, J.
+  2007{\natexlab{a}}, ApJ, 665, 1254
+
+\bibitem[{{Boley} {et~al.}(2007{\natexlab{b}}){Boley}, {Hartquist}, {Durisen},
+  \& {Michael}}]{boley2007a}
+{Boley}, A.~C., {Hartquist}, T.~W., {Durisen}, R.~H., \& {Michael}, S.
+  2007{\natexlab{b}}, ApJL, 656, L89
+
+\bibitem[{{Boley} {et~al.}(2006){Boley}, {Mej{\'{\i}}a}, {Durisen}, {Cai},
+  {Pickett}, \& {D'Alessio}}]{boley2006}
+{Boley}, A.~C., {Mej{\'{\i}}a}, A.~C., {Durisen}, R.~H., {Cai}, K., {Pickett},
+  M.~K., \& {D'Alessio}, P. 2006, ApJ, 651, 517
+
+\bibitem[{{Boss}(1984)}]{boss1984}
+{Boss}, A.~P. 1984, MNRAS, 209, 543
+
+\bibitem[{{Boss}(2002)}]{boss2002}
+---. 2002, ApJ, 576, 462
+
+\bibitem[{{Boss}(2009)}]{boss2009}
+---. 2009, ApJ, 694, 107
+
+\bibitem[{{Cai} {et~al.}(2008){Cai}, {Durisen}, {Boley}, {Pickett}, \&
+  {Mej{\'{\i}}a}}]{cai2008}
+{Cai}, K., {Durisen}, R.~H., {Boley}, A.~C., {Pickett}, M.~K., \&
+  {Mej{\'{\i}}a}, A.~C. 2008, ApJ, 673, 1138
+
+\bibitem[{{Cai} {et~al.}(2006){Cai}, {Durisen}, {Michael}, {Boley},
+  {Mej{\'{\i}}a}, {Pickett}, \& {D'Alessio}}]{cai2006}
+{Cai}, K., {Durisen}, R.~H., {Michael}, S., {Boley}, A.~C., {Mej{\'{\i}}a},
+  A.~C., {Pickett}, M.~K., \& {D'Alessio}, P. 2006, ApJL, 636, L149
+
+\bibitem[{{Christodoulou}(1991)}]{christodoulou1991}
+{Christodoulou}, D.~M. 1991, \apj, 372, 471
+
+\bibitem[{{Clarke} {et~al.}(2007){Clarke}, {Harper-Clark}, \&
+  {Lodato}}]{clarke2007}
+{Clarke}, C.~J., {Harper-Clark}, E., \& {Lodato}, G. 2007, MNRAS, 381, 1543
+
+\bibitem[{{Cossins} {et~al.}(2009){Cossins}, {Lodato}, \&
+  {Clarke}}]{cossins2009}
+{Cossins}, P., {Lodato}, G., \& {Clarke}, C.~J. 2009, \mnras, 393, 1157
+
+\bibitem[{{Cossins} {et~al.}(2010){Cossins}, {Lodato}, \&
+  {Clarke}}]{cossins2010}
+---. 2010, \mnras, 401, 2587
+
+\bibitem[{{Durisen} {et~al.}(2007){Durisen}, {Boss}, {Mayer}, {Nelson},
+  {Quinn}, \& {Rice}}]{durisen2007}
+{Durisen}, R.~H., {Boss}, A.~P., {Mayer}, L., {Nelson}, A.~F., {Quinn}, T., \&
+  {Rice}, W.~K.~M. 2007, in Protostars and Planets V, B. Reipurth, D. Jewitt,
+  and K. Keil (eds.), University of Arizona Press, Tucson, 951 pp., 2007.,
+  p.607-622, ed. B.~{Reipurth}, D.~{Jewitt}, \& K.~{Keil}, 607--622
+
+\bibitem[{{Durisen} {et~al.}(2005){Durisen}, {Cai}, {Mej{\'{\i}}a}, \&
+  {Pickett}}]{durisen2005}
+{Durisen}, R.~H., {Cai}, K., {Mej{\'{\i}}a}, A.~C., \& {Pickett}, M.~K. 2005,
+  Icarus, 173, 417
+
+\bibitem[{{Durisen} {et~al.}(1986){Durisen}, {Gingold}, {Tohline}, \&
+  {Boss}}]{durisen1986}
+{Durisen}, R.~H., {Gingold}, R.~A., {Tohline}, J.~E., \& {Boss}, A.~P. 1986,
+  ApJ, 305, 281
+
+\bibitem[{{Gammie}(2001)}]{gammie2001}
+{Gammie}, C.~F. 2001, ApJ, 553, 174
+
+\bibitem[{{Goldreich} \& {Lynden-Bell}(1965)}]{goldreich1965}
+{Goldreich}, P. \& {Lynden-Bell}, D. 1965, MNRAS, 130, 125
+
+\bibitem[{{Hachisu}(1986)}]{hachisu1986}
+{Hachisu}, I. 1986, ApJS, 61, 479
+
+\bibitem[{{Kratter} {et~al.}(2010){Kratter}, {Matzner}, {Krumholz}, \&
+  {Klein}}]{kratter2010}
+{Kratter}, K.~M., {Matzner}, C.~D., {Krumholz}, M.~R., \& {Klein}, R.~I. 2010,
+  ApJ, 708, 1585
+
+\bibitem[{{Larson}(1984)}]{larson1984}
+{Larson}, R.~B. 1984, MNRAS, 206, 197
+
+\bibitem[{{Laughlin} \& {Bodenheimer}(1994)}]{laughlin1994}
+{Laughlin}, G. \& {Bodenheimer}, P. 1994, ApJ, 436, 335
+
+\bibitem[{{Laughlin} {et~al.}(1997){Laughlin}, {Korchagin}, \&
+  {Adams}}]{laughlin1997}
+{Laughlin}, G., {Korchagin}, V., \& {Adams}, F.~C. 1997, ApJ, 477, 410
+
+\bibitem[{{Laughlin} {et~al.}(1998){Laughlin}, {Korchagin}, \&
+  {Adams}}]{laughlin1998}
+---. 1998, ApJ, 504, 945
+
+\bibitem[{{Laughlin} \& {Rozyczka}(1996)}]{laughlin1996}
+{Laughlin}, G. \& {Rozyczka}, M. 1996, \apj, 456, 279
+
+\bibitem[{{Lin}(1981)}]{lin1981}
+{Lin}, D.~N.~C. 1981, ApJ, 246, 972
+
+\bibitem[{{Lin} \& {Pringle}(1987)}]{lin1987}
+{Lin}, D.~N.~C. \& {Pringle}, J.~E. 1987, \mnras, 225, 607
+
+\bibitem[{{Lin} \& {Pringle}(1990)}]{lin1990}
+---. 1990, ApJ, 358, 515
+
+\bibitem[{{Lodato} \& {Rice}(2004)}]{lodato2004}
+{Lodato}, G. \& {Rice}, W.~K.~M. 2004, MNRAS, 351, 630
+
+\bibitem[{{Lodato} \& {Rice}(2005)}]{lodato2005}
+---. 2005, MNRAS, 358, 1489
+
+\bibitem[{{Lynden-Bell} \& {Kalnajs}(1972)}]{lyndenbell1972}
+{Lynden-Bell}, D. \& {Kalnajs}, A.~J. 1972, MNRAS, 157, 1
+
+\bibitem[{{Mayer} {et~al.}(2002){Mayer}, {Quinn}, {Wadsley}, \&
+  {Stadel}}]{mayer2002}
+{Mayer}, L., {Quinn}, T., {Wadsley}, J., \& {Stadel}, J. 2002, Science, 298,
+  1756
+
+\bibitem[{{Mej{\'{\i}}a}(2004)}]{mejiaphd2004}
+{Mej{\'{\i}}a}, A.~C. 2004, PhD thesis, Indiana University
+
+\bibitem[{{Mej{\'{\i}}a} {et~al.}(2005){Mej{\'{\i}}a}, {Durisen}, {Pickett}, \&
+  {Cai}}]{mejia2005}
+{Mej{\'{\i}}a}, A.~C., {Durisen}, R.~H., {Pickett}, M.~K., \& {Cai}, K. 2005,
+  ApJ, 619, 1098
+
+\bibitem[{{Meru} \& {Bate}(2011{\natexlab{a}})}]{meru2011a}
+{Meru}, F. \& {Bate}, M.~R. 2011{\natexlab{a}}, MNRAS, 411, L1
+
+\bibitem[{{Meru} \& {Bate}(2011{\natexlab{b}})}]{meru2011b}
+---. 2011{\natexlab{b}}, MNRAS, 410, 559
+
+\bibitem[{{Michael} \& {Durisen}(2010)}]{michael2010}
+{Michael}, S. \& {Durisen}, R.~H. 2010, MNRAS, 406, 279
+
+\bibitem[{{Nelson} {et~al.}(1998){Nelson}, {Benz}, {Adams}, \&
+  {Arnett}}]{nelson1998}
+{Nelson}, A.~F., {Benz}, W., {Adams}, F.~C., \& {Arnett}, D. 1998, ApJ, 502,
+  342
+
+\bibitem[{{Nelson} {et~al.}(2000){Nelson}, {Benz}, \&
+  {Ruzmaikina}}]{nelson2000a}
+{Nelson}, A.~F., {Benz}, W., \& {Ruzmaikina}, T.~V. 2000, ApJ, 529, 357
+
+\bibitem[{{Norman} \& {Winkler}(1986)}]{norman1986}
+{Norman}, M.~L. \& {Winkler}, K.-H.~A. 1986, in NATO Advanced Research Workshop
+  on Astrophysical Radiation Hydrodynamics,, ed. K.-H.~A. {Winkler} \& M.~L.
+  {Norman} (D. Reidel Publishing Co., Boston, MA), 187
+
+\bibitem[{{Paczynski}(1978)}]{paczynski1978}
+{Paczynski}, B. 1978, \actaa, 28, 91
+
+\bibitem[{{Papaloizou} \& {Savonije}(1991)}]{papaloizou1991}
+{Papaloizou}, J.~C. \& {Savonije}, G.~J. 1991, MNRAS, 248, 353
+
+\bibitem[{{Pickett} {et~al.}(1998){Pickett}, {Cassen}, {Durisen}, \&
+  {Link}}]{pickett1998}
+{Pickett}, B.~K., {Cassen}, P., {Durisen}, R.~H., \& {Link}, R. 1998, ApJ, 504,
+  468
+
+\bibitem[{{Pickett} {et~al.}(2000){Pickett}, {Cassen}, {Durisen}, \&
+  {Link}}]{pickett2000}
+---. 2000, ApJ, 529, 1034
+
+\bibitem[{{Pickett} {et~al.}(1996){Pickett}, {Durisen}, \&
+  {Davis}}]{pickett1996}
+{Pickett}, B.~K., {Durisen}, R.~H., \& {Davis}, G.~A. 1996, ApJ, 458, 714
+
+\bibitem[{{Pickett} {et~al.}(2003){Pickett}, {Mej{\'{\i}}a}, {Durisen},
+  {Cassen}, {Berry}, \& {Link}}]{pickett2003}
+{Pickett}, B.~K., {Mej{\'{\i}}a}, A.~C., {Durisen}, R.~H., {Cassen}, P.~M.,
+  {Berry}, D.~K., \& {Link}, R.~P. 2003, ApJ, 590, 1060
+
+\bibitem[{Press {et~al.}(1992)Press, Teukolsky, Vetterling, \&
+  Flannery}]{press1992}
+Press, W., Teukolsky, S., Vetterling, W., \& Flannery, B. 1992, {Numerical
+  Recipes in C}, 2nd edn. (Cambridge, UK: Cambridge University Press)
+
+\bibitem[{{Pringle}(1981)}]{pringle1981}
+{Pringle}, J.~E. 1981, \araa, 19, 137
+
+\bibitem[{{Rice} {et~al.}(2003){Rice}, {Armitage}, {Bate}, \&
+  {Bonnell}}]{rice2003b}
+{Rice}, W.~K.~M., {Armitage}, P.~J., {Bate}, M.~R., \& {Bonnell}, I.~A. 2003,
+  MNRAS, 339, 1025
+
+\bibitem[{{Rice} {et~al.}(2005){Rice}, {Lodato}, \& {Armitage}}]{rice2005}
+{Rice}, W.~K.~M., {Lodato}, G., \& {Armitage}, P.~J. 2005, MNRAS, 364, L56
+
+\bibitem[{{Shakura} \& {Sunyaev}(1973)}]{shakura1973}
+{Shakura}, N.~I. \& {Sunyaev}, R.~A. 1973, A\&A, 24, 337
+
+\bibitem[{Shannon(1984)}]{shannon1984}
+Shannon, C. 1984, Proceedings of the IEEE, 72, 1192
+
+\bibitem[{{Shu} {et~al.}(1990){Shu}, {Tremaine}, {Adams}, \& {Ruden}}]{shu1990}
+{Shu}, F.~H., {Tremaine}, S., {Adams}, F.~C., \& {Ruden}, S.~P. 1990, ApJ, 358,
+  495
+
+\bibitem[{{Stamatellos} \& {Whitworth}(2008)}]{stamatellos2008}
+{Stamatellos}, D. \& {Whitworth}, A.~P. 2008, A\&A, 480, 879
+
+\bibitem[{{Tomley} {et~al.}(1991){Tomley}, {Cassen}, \&
+  {Steiman-Cameron}}]{tomley1991}
+{Tomley}, L., {Cassen}, P., \& {Steiman-Cameron}, T. 1991, ApJ, 382, 530
+
+\bibitem[{{Tomley} {et~al.}(1994){Tomley}, {Steiman-Cameron}, \&
+  {Cassen}}]{tomley1994}
+{Tomley}, L., {Steiman-Cameron}, T.~Y., \& {Cassen}, P. 1994, ApJ, 422, 850
+
+\bibitem[{{Toomre}(1981)}]{toomre1981}
+{Toomre}, A. 1981, in Structure and Evolution of Normal Galaxies, ed.
+  {S.~M.~Fall \& D.~Lynden-Bell}, 111--136
+
+\bibitem[{{van Albada} {et~al.}(1982){van Albada}, {van Leer}, \&
+  {Roberts}}]{albada1982}
+{van Albada}, G.~D., {van Leer}, B., \& {Roberts}, Jr., W.~W. 1982, \aap, 108,
+  76
+
+\bibitem[{{Vorobyov}(2010)}]{vorobyov2010}
+{Vorobyov}, E.~I. 2010, New Astronomy, 15, 24
+
+\bibitem[{{Vorobyov} \& {Basu}(2005)}]{vorobyov2005}
+{Vorobyov}, E.~I. \& {Basu}, S. 2005, \mnras, 360, 675
+
+\bibitem[{{Vorobyov} \& {Basu}(2006)}]{vorobyov2006}
+---. 2006, ApJ, 650, 956
+
+\bibitem[{{Yang}(1992)}]{yangphd1992}
+{Yang}, S.~X. 1992, PhD thesis, Indiana University
+
+\bibitem[{{Yorke} \& {Bodenheimer}(1999)}]{yorke1999}
+{Yorke}, H.~W. \& {Bodenheimer}, P. 1999, ApJ, 525, 330
+
+\bibitem[{{Yorke} {et~al.}(1993){Yorke}, {Bodenheimer}, \&
+  {Laughlin}}]{yorke1993}
+{Yorke}, H.~W., {Bodenheimer}, P., \& {Laughlin}, G. 1993, ApJ, 411, 274
+
+\end{thebibliography}
 
 
 \newpage
@@ -651,8 +900,8 @@ University.
 \begin{center}
 \begin{tabular}{cccccc}
 \multicolumn{5}{c}{$Q$, Fourier Amplitudes, $\alpha$, and $\dot{M}$}\\ \hline\hline
-$l_{max}$ & $Q_{\rm avg}$   & $\langle A_{tot} \rangle$   & $\langle A_{2-7} \rangle / \langle A_{tot} \rangle$ &
-$\alpha_{\rm avg}$ & $|\dot{M}|_{\rm avg} ~\mathrm{M_\odot/yr}$\\\hline
+$l_{max}$ & $Q_{avg}$   & $\langle A_{tot} \rangle$   & $\langle A_{2-7} \rangle / \langle A_{tot} \rangle$ &
+$\alpha_{avg}$ & $|\dot{M}|_{avg} ~\mathrm{M_\odot/yr}$\\\hline
 64   & 1.26 & 1.96 &  0.76 & 0.069 & 8.9$ \times 10^{-7}$ \\
 128 & 1.24 & 1.91 &  0.62 & 0.044 & 3.7$ \times 10^{-7}$ \\
 256 & 1.39 & 1.83 &  0.54 & 0.026 & 2.5$ \times 10^{-7}$ \\
@@ -661,7 +910,7 @@ $\infty$ & & &0.43 & 0.017 & \\ \hline
 \label{tbl:ams}
 \end{tabular}
 \caption{ All quantities are time-averaged over 12 -- 18 ORP.
-$Q_{\rm avg}$, $\alpha_{\rm avg}$, and $|\dot{M}|_{\rm avg}$  are also spatially
+$Q_{avg}$, $\alpha_{avg}$, and $|\dot{M}|_{avg}$  are also spatially
 averaged over 10 -- 40 AU.  The entries for ``$\infty$'' are based on Richardson extrapolation,
 as explained in the text.}  
 \end{center}
@@ -758,7 +1007,7 @@ components for all azimuthal resolutions.  While a higher fraction of the total 
 \begin{figure}
 \plotone{Figure6.eps}
 \caption
-{Effective $\alpha$'s for the $t_{\rm cool} =$ 2 ORP, $\gamma = 5/3$, $\Sigma \sim r^{ -1}$ disk, averaged between 12 and 18
+{Effective $\alpha$'s for the $t_{cool} =$ 2 ORP, $\gamma = 5/3$, $\Sigma \sim r^{ -1}$ disk, averaged between 12 and 18
   ORP, for four different azimuthal grid resolutions, given by the number of azimuthal grid-points $l_{max}$. The
   dashed lines show the $\alpha$ from equation (\ref{eq:gammie}) (upper: strongly self-gravitating limit, lower:
   non-self-gravitating limit), while the dotted line at $\log(\alpha) = -1.22$ represents the maximum stress a disk can

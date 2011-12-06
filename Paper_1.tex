@@ -409,17 +409,15 @@ and $c_s$ the sound speed. In comparison to \citeauthor{gammie2001}'s 2D models,
 %for a strongly self gravitating disk.
   
 
-Numerical uncertainties render Reynolds stresses difficult to determine accurately. 
-This difficulty is mitigated by the fact that 
-previous studies have found Reynolds stresses to be small relative to gravitational stresses (see, 
-for example, figure 5 of Lodato \& Rice 2004 and figure 10 of Boley et al. 2006).  This  suggests that the Reynolds stress
-can be neglected in the evaluation of $\alpha_{\rm{eff}}$.   For this reason, 
-here we omit
-$T_{\varpi\phi}^{Reyn}$ from the calculation of $\alpha_{\rm{eff}}$. 
-We note that \cite{gammie2001}  found
-Reynolds and gravitational stresses contributed equally to $\alpha_{\rm{eff}}$ in his study.  However,
-his was a local, shearing-sheet, 2D study.  As such, it was unable to capture global effects, such
-as those seen in the cited 3D studies.  
+As discussed in section \ref{sec:converge}, numerical uncertainties render Reynolds stresses difficult to
+determine accurately.  This difficulty is mitigated somewhat by the fact that previous global three
+dimensional studies have found Reynolds stresses to be small relative to gravitational stresses (see, for
+example, figure 5 of Lodato \& Rice 2004 and figure 10 of Boley et al. 2006).  Here we omit
+$T_{\varpi\phi}^{Reyn}$ from the calculation of $\alpha_{\rm{eff}}$ and show in section \ref{sec:converge}
+that, in fact, the gravitational torques are sufficient to account for all the mass transport.  We note that
+\cite{gammie2001} found Reynolds and gravitational stresses contributed equally to $\alpha_{\rm{eff}}$ in his
+study.  However, his was a local, shearing-sheet, 2D study.  As such, it was unable to capture global effects,
+such as those seen in the cited 3D studies.
 
 
 The gravitational stresses of equation \eqref{alpha1} can be evaluated using the gravitational torque of equation \eqref{torque1}, i.e.,
@@ -477,7 +475,7 @@ even in this highly GI-active region, Gammie's formula only seems valid over man
 when averaged over a substantial volume of the disk. 
 
 
-\subsection{Convergence and $l_{max}$}
+\subsection{Convergence and $l_{max}$}\label{sec:converge}
 
 The results above permit an assessment of appropriate azimuthal grids for the problem under consideration and
 similar problems. The $l_{max} = 512$ simulation yields a value for $\alpha_{\rm avg}$ of 0.020. This
@@ -502,6 +500,31 @@ important contributions from Reynolds stresses are being overlooked. Moreover, w
 \citet{boley2006} to estimate mass inflow rates based on the measured gravitational torques and find that
 these torques are indeed sufficient to account for the measured $\dot{M}$.
 
+The principal reasons for not including the contributions from the Reynolds stress are twofold:
+
+1) As
+elucidated in the above paragraph, the gravitational torques are sufficient to account for the measured
+$\alpha$ and $\dot{M}$, and all three converge as resolution is increased. There does not appear to be an
+additional source of stress required to explain the observed mass transport.
+
+2) It is difficult to measure the Reynolds stress accurately in a nonlocal, strongly nonlinear calculation. The difficulty arises from the fact that the Reynolds
+stress is typically defined as 
+\begin{equation}
+\label{eq:reynstress}
+R_{ij} = \rho u'_i u'_j
+\end{equation}
+where $u'_i$ and $u'_j$ are the fluctuations in the velocity field. The fluctuating pieces of the velocity
+field are defined as $u'_i = u_i - u_i({\rm avg})$, but in a gravitationally unstable disk with extended
+non-axisymmetric spiral structures, the proper definition of the ``mean'' flow, $u_i({\rm avg})$, is unclear.
+
+In attempting to measure the Reynolds stresses, we tried using several different
+definitions for $u_{\phi}({\rm avg})$ and obtained results that varied dramatically. We used several local
+averaging schemes as well as an azimuthal average. Although Reynolds stresses are presented for other global
+simulations, \citep[e.g.][]{lodato2004}, the precise methods used to determine
+the stress values are not always elucidated. Because of this, it is difficult to make a direct comparison.
+The particulars of the method chosen can have a significant effect on the computed values of the
+Reynolds stress.
+
 Another consideration is the effect of $r$ and $z$ resolutions on the outcome of the simulation. In this study we have chosen to focus on azimuthal resolution because it has the greatest effect on resolving the non-axisymmetric
 structures responsible for producing the gravitational stresses. However, as one increases the azimuthal resolution, the radius at which the cells have roughly equal sides increases as well. Ideally, this should occur near the radial range where GIs are most active. For $l_{max} = 512$, $\delta r = r \delta \phi $ at $\approx 13.5$ AU, which is near the radius where GIs are active.
 
@@ -516,7 +539,7 @@ with higher resolution.
 Although computationally expensive, simulations with even higher resolution in all directions and codes using different grid geometry
 would be worthwhile.
 
-\subsection{Fragmentation and Effective $\alpha$s}
+\subsection{Fragmentation and Effective Alphas}
 
 \noindent
 
@@ -535,10 +558,14 @@ becomes increasingly likely for longer cooling times when the resolution in thei
 giving weight to the claims by, e.g., \cite{boss2009}, that fragmentation is a robust result of disk instability. The
 Meru \& Bate study uses a prescribed cooling such that $t_{\rm cool}=\beta\Omega^{-1}$, where $\Omega$ is the local
 orbital frequency and $\beta$ is some global constant.  This same cooling prescription was used in the Gammie and Rice
-et al.~studies.  The reason for the differences is unclear, and may not be simply a resolution effect (see Lodato \&
-Clarke 2011, arXiv:1101.2448).  For example, the \cite{gammie2001} have revealed the most stringent cooling criterion of
+et al.~studies.  The reason for the differences is unclear, and may not be simply a resolution effect \citep{lodato2011}.  For example, the \citeauthor{gammie2001} work revealed the most stringent cooling criterion of
 all the $t_{\rm cool}$ fragmentation studies, and, due to the local approximation Gammie used, these simulations are also at
-very high resolution. Moreover, \cite{mejia2005}, who used grid-based simulations with the same code we use here, and  \cite{boley2008}, who used radiative hydrodynamics simulations, also found results that are reasonably consistent with those of Gammie, Rice et al., and \cite{cossins2010}. 
+very high resolution. Moreover, \cite{mejia2005}, who used grid-based simulations with the same code we use
+here, and  \cite{boley2008}, who used radiative hydrodynamics simulations, also found results that are
+reasonably consistent with those of \citet{gammie2001}, \citet{rice2005}, and \cite{cossins2010}. Very recent
+work by \citet{paardekooper2011} supporting the \citeauthor{gammie2001} fragmentation criterion suggests that
+convergence results for fragmentation may be sensitive to the presence of sharp edges and the manner in which
+fragmentation is approached.
 
 The present convergence study does not address fragmentation directly, but there are several results that should be noted.  First, although the total power in non-axisymmetric structure is roughly constant throughout the simulations, the average $Q$ value increases with increasing resolution (Table 1).  Because both fast cooling and a low $Q$ are necessary
 for fragmentation, this suggests that the disk is becoming less susceptible to clump formation with increasing resolution.   Second, the disks do not show a trend toward denser spiral structure as the resolution is increased which is seen by eye in figure 2, and is quantified by the decrease in $\left<A_{2-7}\right>$.  The high-$m$ modes are increasing in power, but remain smaller than the low-$m$ components.   Third, our results show that as the resolution increases, the disk approaches a self-regulating state that is reasonably well-described, in the time- and space-average sense, by an $\alpha$-disk with the parameterization of \cite{gammie2001}. 
@@ -551,67 +578,49 @@ increased, and do not show signs of becoming more susceptible to fragmentation.
 
 \section{Summary}
 
-We conducted a convergence study of a protostellar disk subject to gravitational instabilities to
-examine the distribution and amplitudes 
-of non-axisymmetric density structures arising from GIs 
-and the connection of these structures to gravitational torques,
-to the level which transport can be represented by a simple $\alpha$-disk formulation,
-and to fragmentation.
-A 3D hydrodynamics code with self-gravity
-was used to follow a disk subject to a constant global cooling time during its asymptotic state, when
-heating and cooling are roughly in balance.
-Four simulations were conducted, identical except for the number of azimuthal grid 
+We conducted a convergence study of a protostellar disk subject to gravitational instabilities to examine the
+distribution and amplitudes of non-axisymmetric density structures arising from GIs and the connection of
+these structures to gravitational torques, to the level which transport can be represented by a simple
+$\alpha$-disk formulation, and to fragmentation.  A 3D hydrodynamics code with self-gravity was used to follow
+a disk subject to a constant global cooling time during its asymptotic state, when heating and cooling are
+roughly in balance.  Four simulations were conducted, identical except for the number of azimuthal grid
 points, $l_{max} = $ 64, 128, 256, and 512, used in the calculations.
 
-A Fourier decomposition of the non-axisymmetric density structure 
-in $\cos(m\phi)$, $\sin(m\phi)$ was performed in order to
-characterize the amplitude distribution,  $A_m$,
-of azimuthal structures as a function of $m$.  
-This and previous studies have shown
-that disks in the asymptotic state have power at all resolvable $m$-values.
-The maximum value of  $m$ is given by
-$m_{max} = l_{max}/2$.  Therefore simulations with larger $l_{max}$ can spread the
-power over more Fourier components.
-We find that $\langle A_{tot} \rangle$, the power summed over all $m$, is roughly the same
-for all resolutions.
-However, the distribution of power among the Fourier components
-is distinctly affected by $l_{max} $.  
+A Fourier decomposition of the non-axisymmetric density structure in $\cos(m\phi)$, $\sin(m\phi)$ was
+performed in order to characterize the amplitude distribution, $A_m$, of azimuthal structures as a function of
+$m$.  This and previous studies have shown that disks in the asymptotic state have power at all resolvable
+$m$-values.  The maximum value of $m$ is given by $m_{max} = l_{max}/2$.  Therefore simulations with larger
+$l_{max}$ can spread the power over more Fourier components.  We find that $\langle A_{tot} \rangle$, the
+power summed over all $m$, is roughly the same for all resolutions.  However, the distribution of power among
+the Fourier components is distinctly affected by $l_{max} $.
 % $A_7$ is approximately equal for all resolutions.
-The fractional
-amplitude in low-order modes, $\langle A_{2-7} \rangle / \langle A_{tot} \rangle$,
-where $\langle A_{2-7} \rangle$ is 
-the sum over modes $m = 2$ through 7, 
-decreases monotonically with increasing resolution.  Over three quarters of $\langle A_{tot} \rangle$ resides
-in $m =$ 2 -- 7 for the $l_{max} = 64$ simulation, while approximately half resides in these $m$-values when $l_{max} =$ 512.
-A Richardson extrapolation suggests a limiting value of $\langle A_{2-7} \rangle / \langle A_{tot} \rangle \sim 0.43$ 
-as $l_{max}\rightarrow \infty$.
-The number of degrees of freedom available for power, $l_{max}/2$, increases linearly with the resolution.  Thus
-Fourier amplitudes are naturally spread from lower-order to higher-order as the available $m$-values increase. 
+The fractional amplitude in low-order modes, $\langle A_{2-7} \rangle / \langle A_{tot} \rangle$, where
+$\langle A_{2-7} \rangle$ is the sum over modes $m = 2$ through 7, decreases monotonically with increasing
+resolution.  Over three quarters of $\langle A_{tot} \rangle$ resides in $m =$ 2 -- 7 for the $l_{max} = 64$
+simulation, while approximately half resides in these $m$-values when $l_{max} =$ 512.  A Richardson
+extrapolation suggests a limiting value of $\langle A_{2-7} \rangle / \langle A_{tot} \rangle \sim 0.43$ as
+$l_{max}\rightarrow \infty$.  The number of degrees of freedom available for power, $l_{max}/2$, increases
+linearly with the resolution.  Thus Fourier amplitudes are naturally spread from lower-order to higher-order
+as the available $m$-values increase.
 
 Non-axisymmetric density structures produce gravitational torques, driving radial flows of mass and angular momentum.   While the total torque is dominated by low-order Fourier components for all azimuthal resolutions, the total
 time-averaged gravitational torque  is smaller for higher resolution simulations.   This reflects the fact that while a higher fraction of the total power in larger $l_{max}$ simulations is in higher-order Fourier components, these components make only minimal contributions to the gravitational torque. As $l_{max}$ increases, non-axisymmetric amplitude is shifted from low-order global components, which produce relatively large gravitational torques, to high-order local structures, which tend to cancel each other when integrated over the whole disk. 
 
-The effective $\alpha_{\rm{eff}}$ was determined for each simulation under the assumption that
-Reynolds stresses are negligible relative to the gravitational stresses, as found in
-previous 3D studies.  
-As is the case for gravitational torques, $\alpha_{\rm{eff}}$  decreases with increased resolution.  
-Derived values of 
-$\alpha_{\rm{eff}}$ vs. radius for the highest resolution simulation, $l_{max} = 512$, 
-are consistent with
-predictions from an analytic local theory for thin disks by \citet{gammie2001}, as is the
-converged $\alpha_{\rm{eff}}= 0.017$, time-averaged over the asymptotic phase and spatially averaged 
-over the disk. The time and spatially averaged $\alpha_{\rm{eff}}$  
-obtained for the $l_{max} = 512$ simulations overestimates the converged value
-by less than 20\%.  Gravitational torques for this same model differ with converged values by a
-similar amount.
-Locally determined values of
-$\alpha_{\rm{eff}}$ vary by factors of 2 or 3 throughout the disk on timescales characteristic
-of the local dynamical time.  Thus the predictions of Gammie are only valid over many dynamic times when averaged over a substantial volume of the disk.
+The effective $\alpha_{\rm{eff}}$ was determined for each simulation under the assumption that Reynolds
+stresses are negligible relative to the gravitational stresses, as found in previous 3D studies.  As is the
+case for gravitational torques, $\alpha_{\rm{eff}}$ decreases with increased resolution.  Derived values of
+$\alpha_{\rm{eff}}$ vs. radius for the highest resolution simulation, $l_{max} = 512$, are consistent with
+predictions from an analytic local theory for thin disks by \citet{gammie2001}, as is the converged
+$\alpha_{\rm{eff}}= 0.017$, time-averaged over the asymptotic phase and spatially averaged over the disk. The
+time and spatially averaged $\alpha_{\rm{eff}}$ obtained for the $l_{max} = 512$ simulations overestimates the
+converged value by less than 20\%.  Gravitational torques for this same model differ with converged values by
+a similar amount.  Locally determined values of $\alpha_{\rm{eff}}$ vary by factors of 2 or 3 throughout the
+disk on timescales characteristic of the local dynamical time.  Thus the predictions of Gammie are only valid
+over many dynamic times when averaged over a substantial volume of the disk.
 
 Although not a goal of this work, our simulations can be used to comment on studies of fragmentation and clump
 formation. Previous work indicates that our disk should not fragment due to the long cooling times that we
-use\citep[e.g., ][]{gammie2001, rice2005, mejia2005, boley2008}. However, some recent studies \citep[e.g.,
-][]{boss2009,meru2011a} suggest that previously determined fragmentation criteria too restrictive due to poor
+use \citep[e.g.,][]{gammie2001, rice2005, mejia2005, boley2008}. However, some recent studies \citep[e.g.,][]{boss2009,meru2011a} suggest that previously determined fragmentation criteria too restrictive due to poor
 resolution. We find here that as the resolution is increased, our disk approaches a self-regulating state that
 can be reasonably well-described, in the time- and space-average sense, by an $\alpha$-disk
 parameterization. The average Toomre $Q$ also increases with increasing resolution, suggesting that the disk
@@ -627,17 +636,13 @@ A future paper will address the issues presented in this work using a convergenc
 
 \acknowledgements
 
-SM would like to thank NASA for the generous funding of the
-NASA Earth and Space Science Fellowship NNX07AU82H. This
-research was also supported in part by NASA Origins of Solar
-Systems grants NNG05GN11G and NNX08AK36G. The simulations
-and analysis herein were conducted on hardware generously
-provided by the Indiana University Information Technology Services
-and was supported by the National Science Foundation under
-Grant no. ACI-0338618l, OCI-0451237, OCI-0535258, CNS-
-0521433 and OCI-0504075. This work was also supported in part
-by Shared University Research grants from IBM, Inc., to the Indiana
-University.
+We would like to thank the anonymous referee for very useful comments that substantially improved this manuscript. SM
+would like to thank NASA for the generous funding of the NASA Earth and Space Science Fellowship
+NNX07AU82H. This research was also supported in part by NASA Origins of Solar Systems grants NNG05GN11G and
+NNX08AK36G. The simulations and analysis herein were conducted on hardware generously provided by the Indiana
+University Information Technology Services and was supported by the National Science Foundation under Grant
+no. ACI-0338618l, OCI-0451237, OCI-0535258, CNS- 0521433 and OCI-0504075. This work was also supported in part
+by Shared University Research grants from IBM, Inc., to the Indiana University. This work used the Extreme Science and Engineering Discovery Environment (XSEDE), which is supported by National Science Foundation grant number OCI-1053575
 
 
 \bibliographystyle{apj}

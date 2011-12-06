@@ -1,0 +1,26 @@
+The authors have included a very nice, detailed description of the difficulties in measuring Reynolds stresses
+in their response, but have neglected to include the discussion in the text. The authors should add at least
+an abbreviated description (perhaps in section 3.4 where they have described the accretion rate
+calculation). Numerous other papers have measured Reynolds stresses, and thus potential problems with the
+measurement are worth pointing out. Including these details increases the credibility of the statement that
+this term can be left out.
+
+* The main points of this discussion are now included in section 3.4.
+
+The only other change I suggest is related to the discussion of the Meru & Bate result (page 22). The recent
+paper by Paardekooper et al 2011 (MNRAS Letters, 416) demonstrates convincingly that the issue was numerical
+in nature. A citation to this paper would be appropriate.
+
+* These changes have been made
+
+The paper that the authors could not find had the last name misspelled, I apologize. It is Walch et al 2010
+(MNRAS, 402, pp 2253).
+
+* This citation has been added
+
+As a very minor note, there are a few places where \alpha_{\rm eff} and \t_{\rm cool} are used without the
+\rm.
+
+* The instances of this subscript have been normalized. 
+
+With the above changes made, I think the paper is suitable for publication.
